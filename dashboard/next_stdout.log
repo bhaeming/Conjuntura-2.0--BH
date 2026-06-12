@@ -1,0 +1,29 @@
+
+> painel-conjuntura-2@0.1.0 dev
+> next dev --hostname 127.0.0.1 --port 3000
+
+   ▲ Next.js 15.5.19
+   - Local:        http://127.0.0.1:3000
+   - Network:      http://127.0.0.1:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.4s
+ ○ Compiling / ...
+ ✓ Compiled / in 9.6s (652 modules)
+ GET / 200 in 10792ms
+ GET / 200 in 213ms
+ ○ Compiling /atividade ...
+ ✓ Compiled /atividade in 7.8s (1786 modules)
+ GET /atividade 200 in 8560ms
+ ○ Compiling /precos ...
+ ✓ Compiled /precos in 1305ms (1797 modules)
+ GET /precos 200 in 1652ms
+ ○ Compiling /juros-credito ...
+ ✓ Compiled /juros-credito in 1393ms (1805 modules)
+ GET /juros-credito 200 in 1702ms
+ ○ Compiling /trabalho ...
+ ✓ Compiled /trabalho in 1638ms (1813 modules)
+ GET /trabalho 200 in 21884ms
+ GET /trabalho 200 in 15499ms
+ GET /trabalho 200 in 17884ms
+ GET /atividade 200 in 419ms
