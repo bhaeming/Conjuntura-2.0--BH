@@ -1,0 +1,1119 @@
+1
+CARTA DE
+CONJUNTURA
+NÚMERO 71 — NOTA DE CONJUNTURA 12 — 2 ° TRIMESTRE DE 2026
+Leonardo Mello de Carvalho
+T écnico de planejamento e pesquisa 
+na Diretoria de Estudos e Políticas 
+Macroeconômicas do Instituto de Pesquisa 
+Econômica Aplicada (Dimac/Ipea)
+leonardo.carvalho@ipea.gov.br
+Claudio Hamilton Matos dos Santos
+Coordenador de Acompanhamento e 
+Estudos da Conjuntura na Dimac/Ipea
+claudio.hamilton@ipea.gov.br
+Divulgado em 08 de junho de 2026.
+ATIVIDADE ECONÔMICA
+Desempenho do PIB: primeiro trimestre 
+de 2026
+Sumário
+O produto interno bruto (PIB) brasileiro cresceu 1,1% no primeiro trimestre de 
+2026, na série dessazonalizada, acelerando em relação ao ritmo modesto observado 
+no encerramento de 2025. Na comparação com o mesmo trimestre do ano anterior, a 
+economia expandiu 1,8%, enquanto o crescimento acumulado em quatro trimestres 
+desacelerou de 2,3% para 2,0%. Esses resultados vieram acima das previsões apre -
+sentadas na Nota de Conjuntura no 70,1 publicada em abril de 2026 pela Diretoria de 
+Estudos e Políticas Macroeconômicas (Dimac) do Instituto de Pesquisa Econômica 
+Aplicada (Ipea), que projetava altas de 0,8% na margem, de 1,4% na comparação 
+interanual. Com esse resultado, o carry-over para 2026 passou de 0,2% para 1,4%.
+ O resultado do primeiro trimestre ainda deve ser lido à luz da dinâmica observada 
+ao longo de 2025, quando a economia brasileira passou por um processo de desacele-
+ração gradual, especialmente no segundo semestre. Como destacamos em relatórios 
+anteriores, esse movimento refletiu a tensão entre forças de sentido oposto. De um 
+lado, os efeitos defasados de uma política monetária restritiva continuaram a pesar 
+sobre os componentes mais sensíveis ao ciclo, comprimindo as condições financeiras, 
+elevando o custo do crédito e moderando o consumo das famílias e o investimento. 
+De outro, a resiliência do mercado de trabalho, traduzida na manutenção do cres -
+cimento real dos rendimentos, juntamente com fatores como o reajuste do salário 
+mínimo, as transferências públicas às famílias e a resiliência da demanda por crédito 
+atuaram como contrapesos, ajudando a sustentar o crescimento da renda disponível 
+e do poder de compra das famílias, assim como as vendas das empresas. No primeiro 
+trimestre de 2026, embora essa disputa de forças antagônicas continue a condicio -
+nar o cenário macroeconômico, a balança pendeu mais claramente para o lado dos 
+vetores expansionistas: a demanda interna ganhou fôlego em relação ao final do ano 
+anterior, impulsionando os segmentos mais sensíveis ao ciclo doméstico. De todo 
+modo, o fato é que a aceleração do PIB no início do ano indica que a economia ini-
+ciou 2026 com maior tração do que a observada no encerramento de 2025.
+O ambiente externo, por seu turno, permanece marcado por elevada incerteza, as -
+sociada à persistência de tensões geopolíticas, riscos sobre o comércio mundial e 
+volatilidade nos preços internacionais de commodities. Ainda assim, as especificidades 
+da conjuntura atual tendem a abrir canais relativamente favoráveis para a economia 
+1. Disponível em: https://www.ipea.gov.br/cartadeconjuntura/wp-content/uploads/2025/12/251218_cc_69_nota_22_visao_geral_da_
+conjuntura.pdf.
+2
+Carta de Conjuntura      | 71 | Nota 12 | 2˚ trimestre de 2026
+brasileira, em razão do peso do país como exportador de commodities agropecuárias e minerais. Esse efeito é 
+particularmente relevante porque segmentos menos dependentes do ciclo doméstico, como a agropecuária e as 
+indústrias extrativas, continuam exercendo contribuição importante para o crescimento, ajudando a compen -
+sar, em alguma medida, os efeitos ainda restritivos das condições financeiras sobre os setores mais cíclicos. Ao 
+mesmo tempo, a mesma conjuntura externa também impõe riscos, seja pelo impacto potencial sobre preços de 
+energia, fertilizantes e fretes, seja pela possibilidade de maior persistência inflacionária e de condições financeiras 
+globais mais apertadas. Assim, o cenário segue caracterizado por uma combinação de oportunidades setoriais 
+específicas e riscos macroeconômicos relevantes.
+Pela ótica da produção, o resultado do primeiro trimestre mostrou uma composição mais favorável do que a 
+observada no final de 2025. Na série dessazonalizada, os três grandes setores avançaram, com crescimento da 
+agropecuária (2,0%), da indústria (1,0%) e dos serviços (0,5%), sugerindo maior disseminação do impulso 
+positivo na passagem para 2026. Ainda assim, a leitura setorial continua marcada pela convivência entre vetores 
+de natureza distinta. De um lado, atividades menos dependentes do ciclo doméstico, como a agropecuária, que 
+registrou alta de 0,7% na comparação interanual, e, sobretudo, as indústrias extrativas, que avançaram 13,1% 
+nessa mesma base de comparação, seguiram exercendo papel relevante para o crescimento, beneficiadas por fa -
+tores específicos de oferta e pela demanda mundial por commodities. De outro, alguns segmentos mais sensíveis 
+às condições financeiras ainda mostram desempenho mais contido, como indica a indústria de transformação, 
+que registrou queda de 0,9% em relação ao primeiro trimestre de 2025, a quarta retração consecutiva nessa base 
+de comparação. Nos serviços, cujo valor adicionado cresceu 2,1% na comparação interanual, o desempenho 
+permaneceu positivo e relativamente disseminado, mas com maior destaque para atividades menos diretamente 
+vinculadas ao consumo corrente, como informação e comunicação, que avançou 7,6%. Em conjunto, o resulta-
+do pela produção reforça a ideia de que a aceleração do PIB no início de 2026 combinou a contribuição ainda 
+importante dos segmentos mais exógenos com algum ganho de tração dos setores mais associados à demanda 
+interna.
+Pela ótica da despesa, o resultado do primeiro trimestre também foi marcado pela recomposição da absorção do-
+méstica, após a perda de fôlego observada no encerramento de 2025. O consumo das famílias, que havia ficado 
+praticamente estagnado nos dois últimos trimestres de 2025, avançou 1,0% na série dessazonalizada e cresceu 
+1,7% em relação ao mesmo trimestre do ano anterior. O resultado reforça a importância da resiliência do mer-
+cado de trabalho, do crescimento real dos rendimentos e de fatores associados à sustentação do crescimento da 
+renda disponível para explicar a recuperação do gasto das famílias no início de 2026, ainda que os efeitos defa-
+sados da política monetária restritiva sigam impondo limites à expansão do consumo, sobretudo nos segmentos 
+mais dependentes de crédito. O consumo do governo, por sua vez, registrou alta de 0,4% na margem e de 2,8% 
+na comparação interanual, mantendo contribuição positiva para a demanda doméstica.
+A Formação Bruta de Capital Fixo (FBCF) também voltou a crescer na passagem para 2026, com alta de 3,5% 
+frente ao trimestre anterior, após o recuo observado no encerramento de 2025. Apesar disso, o componente 
+ainda registrou queda de 1,4% em relação ao primeiro trimestre de 2025, refletindo, em especial, a retração 
+da produção interna de bens de capital. Esse resultado interanual negativo foi parcialmente compensado pelo 
+crescimento da construção e das importações de bens de capital, incluindo o efeito pontual associado à impor -
+tação de uma plataforma de petróleo em fevereiro, que também contribuiu para o avanço das importações no 
+trimestre. No setor externo, as exportações recuaram 1,7% na margem, após desempenho bastante favorável ao 
+longo de 2025, enquanto as importações cresceram 4,4%, em linha com a recomposição da demanda interna, 
+com a valorização do câmbio e com a presença desse impulso extraordinário em bens de capital. Na compara -
+ção interanual, as exportações ainda avançaram 7,4%, sustentadas por segmentos ligados a commodities e bens 
+industriais específicos, ao passo que as importações cresceram 1,2%.
+3
+Carta de Conjuntura      | 71 | Nota 12 | 2˚ trimestre de 2026
+1 PIB
+O PIB brasileiro cresceu 1,1% no primeiro trimestre de 
+2026 em relação ao período imediatamente anterior, na 
+série dessazonalizada, acelerando frente ao ritmo modes-
+to observado ao longo do segundo semestre de 2025, 
+quando havia avançado 0,1% no terceiro trimestre e 
+0,3% no quarto trimestre. Em comparação com o mes-
+mo trimestre de 2025, a economia avançou 1,8%, mes-
+ma taxa registrada nos dois trimestres anteriores (gráfico 
+1). Com estes resultados, o crescimento acumulado em 
+quatro trimestres voltou a desacelerar: após 2,3% no 
+encerramento de 2025, o indicador recuou para 2,0% 
+no primeiro trimestre de 2026. Em valores correntes, 
+o produto alcançou R$ 3,25 trilhões no trimestre, dos 
+quais R$ 2,79 trilhões correspondem ao valor adicio -
+nado a preços básicos e R$ 461,2 bilhões aos impostos 
+sobre produtos líquidos de subsídios.
+Como instrumento adicional de análise, é útil reagru -
+par as atividades pelo lado da produção em dois blo -
+cos: i) um conjunto menos sensível ao ciclo doméstico 
+e, portanto, mais “exógeno” às condições correntes da 
+demanda interna; e ii) um conjunto mais sensível ao ci-
+clo, no qual tendem a pesar com mais força as condições 
+financeiras, o custo do crédito e a dinâmica do gasto pri-
+vado.2 Essa lente continua ajudando a organizar o qua -
+dro conjuntural recente em torno de uma economia que 
+ainda opera em duas velocidades, embora com alguma 
+recomposição do impulso doméstico no início de 2026. 
+O gráfico 2 mostra que os segmentos mais exógenos 
+mantiveram uma trajetória de crescimento mais inten -
+sa ao longo do período recente, permanecendo em pa -
+tamar bastante superior ao do valor adicionado total, 
+enquanto o bloco mais cíclico seguiu uma trajetória de 
+expansão mais moderada.
+Esse melhor desempenho relativo dos segmentos exógenos está associado, em grande medida, a vetores menos 
+diretamente dependentes da demanda doméstica corrente, como condições específicas de oferta, demanda ex -
+terna por commodities e efeitos do cenário internacional sobre preços e quantidades exportadas. Em contrapar -
+tida, o núcleo mais cíclico tende a refletir com maior nitidez a combinação entre juros reais elevados, condições 
+financeiras restritivas e moderação dos componentes domésticos mais sensíveis ao financiamento.
+Essa assimetria também aparece nos resultados do primeiro trimestre de 2026. Na comparação interanual, o 
+bloco exógeno cresceu 2,5%, mantendo ritmo superior ao observado entre as atividades cíclicas, que avançaram 
+1,3%. No acumulado em quatro trimestres, a diferença é ainda mais evidente: os segmentos exógenos registra-
+2 . Mais informações em: https://www.ipea.gov.br/cartadeconjuntura/wp-content/uploads/2025/12/251218_cc_69_nota_22_visao_geral_da_conjuntura.pdf, Box 3. x.
+GRÁFICO 2
+PIB: cíclico versus exógeno – evolução dos indicadores de 
+atividade (mar. 1996-mar. 2026)
+(Índices com ajuste sazonal, base: média de 1995 = 100)
+Fonte: IBGE.
+Elaboração: Grupo de Conjuntura da Dimac/Ipea.
+90
+110
+130
+150
+170
+190
+210
+230
+mar/96
+mar/97
+mar/98
+mar/99
+mar/00
+mar/01
+mar/02
+mar/03
+mar/04
+mar/05
+mar/06
+mar/07
+mar/08
+mar/09
+mar/10
+mar/11
+mar/12
+mar/13
+mar/14
+mar/15
+mar/16
+mar/17
+mar/18
+mar/19
+mar/20
+mar/21
+mar/22
+mar/23
+mar/24
+mar/25
+mar/26
+PIB (VA) Cíclicos Exógenos
+GRÁFICO 1
+PIB: evolução das taxas de crescimento trimestral e dessa -
+zonalizado
+(Em %)
+Fonte: Instituto Brasileiro de Geografia e Estatística (IBGE).
+Elaboração: Grupo de Conjuntura da Diretoria de Estudos e Políticas Macroe-
+conômicas do Instituto de Pesquisa Econômica Aplicada (Dimac/Ipea)
+1,1
+1,1 0,4
+1,3
+0,8
+0,1 0,4
+0,7
+1,7
+0,9
+0,1
+1,3
+0,3
+0,1 0,3
+1,1
+3,5
+4,3
+2,7
+4,4
+3,9
+2,4 2,4 2,5
+3,5
+4,1
+3,6
+3,1
+2,4
+1,8 1,8 1,8
+-2
+-1
+0
+1
+2
+3
+4
+5
+2022.II
+2022.III
+2022.IV
+2023.I
+2023.II
+2023.III
+2023.IV
+2024.I
+2024.II
+2024.III
+2024.IV
+2025.I
+2025.II
+2025.III
+2025.IV
+2026.I
+variação contra o trimestre imediatamente anterior
+variação contra mesmo trimestre do ano anterior
+4
+Carta de Conjuntura      | 71 | Nota 12 | 2˚ trimestre de 2026
+ram alta de 3,4%, enquanto o bloco cíclico cresceu 1,0%, abaixo também do avanço de 2,0% do valor adicio -
+nado total. Na margem, contudo, o resultado do primeiro trimestre sugere alguma recomposição do impulso 
+doméstico: os cíclicos avançaram 0,4% após queda de 0,1% no quarto trimestre de 2025, ao passo que os exó-
+genos cresceram 0,9%, mantendo contribuição relevante para o desempenho agregado. Em conjunto, os dados 
+reforçam a leitura de que a aceleração do PIB no início de 2026 combinou a sustentação vinda dos segmentos 
+menos dependentes do ciclo doméstico com uma recomposição parcial das atividades mais sensíveis à demanda 
+interna (gráfico 2 e tabela 1).
+Em relação às projeções do Grupo de Conjuntura da Dimac, que esperava crescimento do PIB de 0,8% na mar-
+gem e 1,4% na comparação interanual, os dados divulgados pelo IBGE vieram acima das nossas previsões. Pelo 
+lado da produção, a principal surpresa positiva veio da indústria, cuja alta interanual de 1,6% superou a previsão 
+em 1,2 ponto percentual (p.p.) (0,6%), embora a transformação tenha mantido fraco desempenho nessa base de 
+comparação. Em contrapartida, o valor adicionado de serviços (2,1%) veio em linha com o projetado (1,9%). 
+Por fim, o bom desempenho da agropecuária (0,7%), mesmo levando em conta uma alta base de comparação 
+associada ao primeiro trimestre de 2025, veio em linha com o projetado (0,6%). Pelo lado da despesa, o desem-
+penho do consumo das famílias (1,7%) e do consumo do governo (2,8%) vieram acima das previsões de 1,3% e 
+2,0%, respectivamente. Por fim, a FBCF e as importações foram as principais surpresas positivas, em ambos os 
+casos influenciadas pela importação de uma plataforma de petróleo no período, enquanto as exportações (7,4%) 
+vieram um pouco abaixo do previsto (8,9%).
+2 Ótica da produção
+Sob a ótica da produção, o resultado do primeiro trimestre de 2026 mostrou uma composição mais favorável 
+do que a observada no encerramento de 2025. Na série dessazonalizada, os três grandes setores avançaram, 
+com crescimento da agropecuária, da indústria e dos serviços, sugerindo maior disseminação do impulso 
+positivo na passagem para o novo ano. Ainda assim, a leitura setorial continua marcada pela coexistência de 
+vetores de naturezas distintas. As atividades menos dependentes do ciclo doméstico, em especial agropecuária 
+e indústrias extrativas, seguiram exercendo papel relevante para o crescimento, apoiadas por fatores especí -
+ficos de oferta e pelo cenário externo associado à demanda por commodities. Ao mesmo tempo, a melhora 
+na margem também refletiu alguma recomposição das atividades mais sensíveis à demanda interna, embora 
+os efeitos defasados das condições financeiras restritivas sigam condicionando o desempenho de segmentos 
+como a indústria de transformação. Nos serviços, o crescimento permaneceu positivo e relativamente disse -
+minado, mas ainda com diferenças importantes entre atividades de maior resiliência e ramos mais expostos ao 
+ciclo doméstico. Em conjunto, o resultado pela produção indica que a aceleração do PIB no início de 2026 
+combinou a sustentação vinda dos segmentos mais exógenos com uma recuperação parcial dos setores mais 
+cíclicos (tabela 2).
+TABELA 1
+Decomposição do PIB: evolução das taxas de variação
+(Em %)
+Fontes: Ipea e IBGE.
+Elaboração: Grupo de Conjuntura da Dimac/Ipea.
+  
+Trimestre/trimestre anterior dessazonalizado Trimestre/igual trimestre do ano anterior Acumulado 
+2T25 3T25 4T25 1T26 2T25 3T25 4T25 1T26 No ano Em quatro 
+trimestres 
+PIB a preços de mercado 0,3 0,1 0,3 1,1 2,4 1,8 1,8 1,8 1,8 2,0 
+Impostos sobre produtos 0,2 0,5 0,3 0,8 1,5 1,4 1,0 1,9 1,9 1,4 
+Valor adicionado a preços básicos 0,4 0,1 0,2 1,0 2,5 1,9 1,9 1,8 1,8 2,0 
+Cíclicos 0,3 0,6 -0,1 0,4 1,3 0,9 0,7 1,3 1,3 1,0 
+Exógenos 0,7 0,2 0,6 0,9 4,0 3,2 3,8 2,5 2,5 3,4 
+ 
+5
+Carta de Conjuntura      | 71 | Nota 12 | 2˚ trimestre de 2026
+A agropecuária voltou a apresentar desempenho positivo no primeiro trimestre de 2026, embora em ritmo 
+bem menos expressivo na comparação interanual, refletindo a elevada base de comparação associada ao forte 
+crescimento observado no início de 2025. Na passagem do quarto trimestre de 2025 para o primeiro trimestre 
+de 2026, o setor avançou 2,0% na série dessazonalizada, contribuindo para a aceleração do PIB na margem. 
+Na comparação com o primeiro trimestre de 2025, contudo, o crescimento foi de 0,7%, após uma sequência 
+de taxas interanuais muito elevadas ao longo de 2025, quando a atividade agropecuária havia sido fortemente 
+impulsionada por uma safra recorde de grãos.
+Em termos de composição, o resultado do primeiro trimestre combinou contribuição positiva da pecuária com 
+desempenho favorável da agricultura, em especial da soja. Segundo a estimativa anual do Levantamento Siste -
+mático da Produção Agrícola (LSPA), divulgada em maio de 2026, a produção de soja deve crescer 4,8% no ano, 
+atingindo novo recorde histórico, favorecida por condições climáticas mais favoráveis na maior parte das regiões 
+produtoras e pela expansão da área plantada. Em sentido contrário, culturas com peso relevante no período re-
+gistraram queda na estimativa anual de produção, como milho (-2,5%) e arroz (-10,6%), o que limitou o avanço 
+agregado do setor na comparação interanual. Ainda assim, no acumulado em quatro trimestres, a agropecuária 
+manteve crescimento elevado, de 7,5%, preservando papel relevante na sustentação do valor adicionado. O re-
+sultado do primeiro trimestre deixa um efeito carry-over de 1,7% para 2026.
+O setor de serviços manteve desempenho positivo no primeiro trimestre de 2026, preservando o papel de prin-
+cipal componente do valor adicionado, ainda que com crescimento moderado na margem. Na série com ajuste 
+sazonal, o volume avançou 0,5% ante o quarto trimestre de 2025, após alta de 0,7% no período anterior. Na 
+comparação com o mesmo trimestre de 2025, o crescimento foi de 2,1%, ligeiramente acima da taxa observa -
+da no quarto trimestre de 2025 (2,0%) e interrompendo a desaceleração observada ao longo de parte do ano 
+passado. O resultado veio em linha com a nossa projeção, que indicava alta de 1,9% em termos interanuais. 
+TABELA 2
+PIB e setores produtivos: evolução das taxas de crescimento
+(Em %)
+Fonte: IBGE.
+Elaboração: Grupo de Conjuntura da Dimac/Ipea.
+  
+Trimestre/trimestre anterior dessazonalizado Trimestre/igual trimestre do ano anterior Acumulado 
+2T25 3T25 4T25 1T26 2T25 3T25 4T25 1T26 No ano Em quatro 
+trimestres 
+PIB a preços de mercado 0,3 0,1 0,3 1,1 2,4 1,8 1,8 1,8 1,8 2,0 
+Impostos sobre produtos 0,2 0,5 0,3 0,8 1,5 1,4 1,0 1,9 1,9 1,4 
+Valor adicionado a preços básicos 0,4 0,1 0,2 1,0 2,5 1,9 1,9 1,8 1,8 2,0 
+Agropecuária -2,1 0,0 0,1 2,0 11,5 10,1 12,1 0,7 0,7 7,5 
+Indústria 0,6 0,6 -0,7 1,0 1,1 1,7 0,6 1,6 1,6 1,3 
+Extrativa 5,1 2,2 1,5 3,6 8,8 11,9 12,0 13,1 13,1 11,5 
+Indústria de transformação -0,4 0,2 -0,6 0,1 -0,2 -0,6 -2,0 -0,9 -0,9 -0,9 
+Eletricidade e gás, água, esgoto, ativ. de  
+gestão de resíduos -1,1 -1,0 1,5 -0,3 -3,1 -1,0 1,0 -1,7 -1,7 -1,2 
+Construção -0,1 0,9 -2,4 2,9 0,2 2,0 -2,9 1,3 1,3 0,1 
+Serviços 0,6 0,3 0,7 0,5 1,9 1,3 2,0 2,1 2,1 1,8 
+Comércio -0,2 0,4 0,1 0,6 1,0 0,9 0,2 1,0 1,0 0,8 
+Transporte, armazenagem e correio 1,0 2,1 -1,5 -0,7 1,3 4,2 1,7 0,7 0,7 2,0 
+Informação e comunicação  1,4 1,6 1,6 2,4 6,5 5,3 7,1 7,6 7,6 6,6 
+Atividades financeiras, de seguros e serviços  
+relacionados 1,0 -0,8 3,4 -0,6 3,5 0,4 4,5 2,8 2,8 2,8 
+Atividades Imobiliárias 0,8 0,7 0,2 1,2 2,0 2,0 1,9 2,9 2,9 2,2 
+Outras atividades de serviços 0,8 0,1 0,7 0,8 2,7 1,1 2,1 2,4 2,4 2,1 
+Adm., defesa, saúde e educação públicas e  
+seguridade social -0,1 0,4 0,4 0,4 0,1 0,3 0,9 1,1 1,1 0,6 
+ 
+6
+Carta de Conjuntura      | 71 | Nota 12 | 2˚ trimestre de 2026
+Em síntese, mesmo em um ambiente ainda condicionado por juros elevados e restrições ao crédito, o setor 
+continuou sustentado pela resiliência do mercado de trabalho, pela renda e por segmentos menos diretamente 
+vinculados ao consumo de bens duráveis e ao financiamento.
+Entre os segmentos, o avanço na margem foi sustentado principalmente por informação e comunicação (2,4%), 
+atividades imobiliárias (1,2%), outras atividades de serviços (0,8%), comércio (0,6%) e administração, defesa, 
+saúde e educação públicas e seguridade social (0,4%). Em contrapartida, transporte, armazenagem e correio 
+(-0,7%) e atividades financeiras, de seguros e serviços relacionados (-0,6%) recuaram na passagem para o pri -
+meiro trimestre. Essa composição sugere que, embora o setor tenha permanecido em expansão, ainda há hete -
+rogeneidade entre seus segmentos, com desempenho mais favorável em atividades associadas a serviços digitais, 
+imobiliários e consumo corrente, e alguma perda de fôlego em ramos mais expostos à dinâmica de cargas, mo -
+bilidade e condições financeiras.
+Na comparação interanual, o crescimento do setor foi disseminado entre todas as atividades. O destaque 
+voltou a ser informação e comunicação, com alta de 7,6%, mantendo o dinamismo observado ao longo de 
+2025 e refletindo a continuidade da expansão de serviços ligados à digitalização, tecnologia da informação 
+e telecomunicações. Também registraram avanço atividades imobiliárias (2,9%), atividades financeiras, de 
+seguros e serviços relacionados (2,8%), outras atividades de serviços (2,4%), administração pública (1,1%), 
+comércio (1,0%) e transporte, armazenagem e correio (0,7%). Em conjunto, os resultados indicam que os 
+serviços seguiram contribuindo de forma relevante para o crescimento do PIB, mas com composição ainda 
+desigual, combinando segmentos de maior resiliência com atividades mais sensíveis ao ciclo doméstico.
+Uma forma complementar de avaliar a composição interna do setor é observar, simultaneamente, as variações 
+acumuladas no ano na margem e na comparação interanual, tal como apresentado no gráfico 3. Como se 
+trata do primeiro trimestre, esses resultados coincidem com as variações trimestrais, permitindo identificar 
+com clareza quais segmentos combinaram expansão nas duas métricas, quais ainda cresceram em relação ao 
+mesmo período do ano anterior, mas perderam fôlego na margem, e quais permanecem em situação menos 
+favorável. Sob essa ótica, predomina um quadro relativamente benigno: a maior parte das atividades situou -
+-se no quadrante “aquecido”, reunindo segmentos que avançaram tanto na série dessazonalizada quanto na 
+comparação interanual. Entre elas, informação e comunicação voltou a se destacar como o principal vetor 
+de dinamismo, liderando o crescimento nas duas métricas. Em contrapartida, um grupo menor de ativida -
+des aparece no quadrante “desacelerando”, sugerindo que, embora ainda operem acima do nível de um ano 
+antes, registraram perda de ritmo na passagem para o início de 2026. Chama a atenção, ainda, a ausência de 
+segmentos nos quadrantes “recuperação” e “desaquecido”, o que reforça a leitura de que, apesar da heteroge -
+neidade interna, o setor de serviços como um todo iniciou o ano em terreno predominantemente positivo. 
+Em conjunto, o gráfico confirma que o desempenho agregado dos serviços no primeiro trimestre refletiu uma 
+combinação entre disseminação do crescimento e moderação apenas pontual em algumas atividades mais 
+sensíveis ao ciclo doméstico.
+A indústria iniciou 2026 com desempenho mais favorável do que o observado no encerramento do ano anterior, 
+embora sua composição interna continue marcada por diferenças importantes entre os segmentos. Na série com 
+ajuste sazonal, o valor adicionado industrial avançou 1,0% no primeiro trimestre ante o período imediatamente 
+anterior, revertendo a queda de 0,7% registrada no quarto trimestre de 2025. Na comparação com o mesmo 
+trimestre do ano anterior, a alta foi de 1,6%, resultado bastante superior ao observado no encerramento de 2025 
+(0,6%) e acima da nossa projeção, que apontava crescimento de 0,6%. No acumulado em quatro trimestres, 
+7
+Carta de Conjuntura      | 71 | Nota 12 | 2˚ trimestre de 2026
+contudo, a indústria manteve crescimento relativamente modesto, de 1,3%, sugerindo que, embora tenha havi-
+do melhora no início de 2026, o setor segue condicionado pelo custo elevado do crédito e pela perda de fôlego 
+de componentes mais ligados à demanda interna.
+Entre os segmentos, o desempenho voltou a ser mar -
+cado por heterogeneidade. As indústrias extrativas 
+avançaram 3,6% na margem e cresceram 13,1% na 
+comparação interanual, permanecendo como o prin -
+cipal vetor de sustentação do agregado industrial. A 
+construção também mostrou recuperação impor -
+tante, com alta de 2,9% ante o trimestre anterior e 
+crescimento de 1,3% em relação ao primeiro trimes -
+tre de 2025, sugerindo alguma recomposição em um 
+segmento tipicamente sensível ao ciclo doméstico. A 
+indústria de transformação, por sua vez, ficou pra -
+ticamente estável na margem (0,1%), mas registrou 
+queda de 0,9% na comparação interanual, a quarta 
+retração consecutiva nessa base de comparação, sina -
+lizando que os ramos mais dependentes das condições 
+financeiras e do investimento privado seguem operan -
+do em ambiente pouco favorável. Já o agrupamento 
+de eletricidade e gás, água, esgoto e atividades de ges -
+tão de resíduos recuou 0,3% na margem e 1,7% na 
+comparação interanual, reforçando a leitura de que a 
+melhora da indústria no trimestre esteve longe de ser 
+generalizada.
+A leitura em quadrantes do gráfico 4 ajuda a qualifi -
+car essa heterogeneidade. Sob essa ótica, as indústrias 
+extrativas aparecem como o principal destaque posi -
+tivo, situando-se com folga no quadrante “aquecido”, 
+ao combinar crescimento expressivo tanto na mar -
+gem quanto na comparação interanual. Nesse mes -
+mo quadrante também se encontram a construção 
+e o agregado da indústria, reunindo atividades que 
+cresceram nas duas métricas. A indústria de transfor -
+mação, por sua vez, aparece no quadrante de “recupe -
+ração”, indicando alguma melhora na passagem para 
+o início de 2026, embora ainda permaneça em terreno negativo na comparação com o mesmo trimestre 
+do ano anterior. Em contrapartida, o segmento de eletricidade e gás, água, esgoto e gestão de resíduos 
+situa-se no quadrante “desaquecido”, combinando resultados negativos nas duas bases de comparação. Em 
+conjunto, o gráfico sugere que a melhora da indústria no primeiro trimestre esteve concentrada em alguns 
+segmentos específicos, com liderança clara das extrativas, sem configurar ainda uma recuperação ampla e 
+disseminada.
+GRÁFICO 3
+PIB de serviços e componentes: taxas de crescimento acu -
+muladas no ano – margem versus interanual (1o trim. 2026)
+(Em %)
+Fonte: Ipea e IBGE.
+Elaboração: Grupo de Conjuntura da Dimac/Ipea.
+Obs.: A comparação acumulada na margem é calculada a partir das taxas tri -
+mestrais dessazonalizadas.
+Comércio
+(0,6; 1,0)
+Transporte, armazenagem e correio
+(-0,7; 0,7)
+Informação e comunicação 
+(2,4; 7,6)
+Atividades financeiras, de seguros e 
+serviços relacionados (-0,6; 2,8)
+Atividades Imobiliárias  
+(1,2; 2,9)
+Outras atividades 
+(0,8; 2,4)
+Adm., defesa, saúde e educação 
+públicas e seguridade social 
+(0,4; 1,1)
+-10
+-8
+-6
+-4
+-2
+2
+4
+6
+8
+10
+-14,0 -9,0 -4,0 1,0 6,0 11,0
+MARGEM
+INTERANUAL
+AQUECIDODESACELERANDO
+DESAQUECIDO RECUPERAÇÃO
+GRÁFICO 4
+PIB da indústria e componentes: taxas de crescimento 
+acumuladas no ano – margem versus interanual (1o trim. 2026)
+(Em %)
+Fonte: Ipea e IBGE.
+Elaboração: Grupo de Conjuntura da Dimac/Ipea.
+Indústrias Extrativas
+(3,6; 13,1)
+Indústrias de 
+transformação
+(0,1; -0,9)
+Eletricidade e gás, água, esgoto, 
+ativ. de gestão de resíduos
+(-0,3; -1,7)
+Construção
+(2,9; 1,3)
+TOTAL
+(1,0; 1,6)
+-15
+-10
+-5
+5
+10
+15
+-5,0 -4,0 -3,0 -2,0 -1,0 0,0 1,0 2,0 3,0 4,0 5,0
+MARGEM
+INTERANUAL
+AQUECIDODESACELERANDO
+DESAQUECIDO RECUPERAÇÃO
+8
+Carta de Conjuntura      | 71 | Nota 12 | 2˚ trimestre de 2026
+Em síntese, o desempenho industrial no início de 2026 continuou refletindo a dualidade entre, de um 
+lado, ramos mais associados a commodities  e fatores exógenos – especialmente as indústrias extrativas – e, 
+de outro, segmentos mais vinculados ao ciclo doméstico e ao custo do financiamento, cujo comporta -
+mento segue mais contido. A melhora observada no trimestre é qualitativamente relevante, sobretudo 
+pela recuperação da construção e pela interrupção da queda do agregado industrial na margem, mas ainda 
+divide espaço com sinais de fragilidade nos núcleos mais sensíveis da produção industrial.Parte superior 
+do formulário
+BOX 1
+Taxas de variação no primeiro trimestre de 2026: contribuições por setor pela ótica da 
+produção
+•	 Embora a comparação trimestre contra trimestre imediatamente anterior, com ajuste sazonal, não apre-
+sente aditividade plena entre os componentes, o exercício de contribuição ajuda a qualificar a composi-
+ção do crescimento na margem. No primeiro trimestre de 2026, a alta de 1,10% do PIB foi explicada 
+principalmente pelo avanço dos serviços, cuja contribuição estimada foi de 0,54 p.p., seguido pela 
+indústria (0,28 p.p.), pela agropecuária (0,14 p.p.) e pelos impostos sobre produtos líquidos de subsí -
+dios (0,13 p.p.). Entre as atividades, destacaram-se outras atividades de serviços (0,17 p.p.), indústrias 
+extrativas (0,13 p.p.), atividades imobiliárias (0,11 p.p.), administração pública (0,11 p.p.), construção 
+(0,10 p.p.) e comércio (0,10 p.p.).
+•	 O setor de serviços foi o principal destaque positivo pela ótica da produção, adicionando 1,24 p.p. ao 
+crescimento interanual do PIB no primeiro trimestre de 2026. Entre as atividades de serviços, os maio-
+res impactos vieram de outras atividades de serviços (0,35 p.p.), informação e comunicação (0,23 p.p.), 
+atividades imobiliárias (0,21 p.p.) e atividades financeiras, de seguros e serviços relacionados (0,20 p.p.).
+•	 A indústria contribuiu com 0,30 p.p. para a taxa interanual do PIB. O resultado líquido, contudo, es -
+conde composição bastante heterogênea: as indústrias extrativas adicionaram 0,41 p.p., permanecendo 
+como o principal vetor de sustentação industrial, enquanto a indústria de transformação (-0,11 p.p.) e 
+o segmento de eletricidade e gás, água, esgoto e gestão de resíduos (-0,04 p.p.) exerceram contribuições 
+negativas. A construção teve impacto positivo, porém modesto (0,04 p.p.).
+•	 A agropecuária adicionou 0,04 p.p. ao crescimento interanual do PIB no primeiro trimestre, contribui-
+ção bem inferior à observada ao longo de 2025, refletindo a elevada base de comparação associada ao 
+forte desempenho do setor no início do ano passado. Ainda assim, no acumulado em quatro trimestres, 
+sua contribuição permaneceu relevante, em 0,46 p.p.
+•	 No acumulado em quatro trimestres, o crescimento de 2,0% do PIB continuou sendo explicado prin -
+cipalmente pelos serviços (1,09 p.p.), seguidos pela agropecuária (0,46 p.p.), pela indústria (0,23 p.p.) 
+e pelos impostos sobre produtos líquidos de subsídios (0,20 p.p.). Entre as atividades desagregadas, 
+destacaram-se as indústrias extrativas (0,36 p.p.), outras atividades de serviços (0,31 p.p.), informação e 
+comunicação (0,20 p.p.) e atividades financeiras, de seguros e serviços relacionados (0,20 p.p.).
+Elaboração: Grupo de Conjuntura da Dimac/Ipea.
+9
+Carta de Conjuntura      | 71 | Nota 12 | 2˚ trimestre de 2026
+3 Ótica da despesa
+Pela ótica da despesa, o resultado do primeiro trimestre de 2026 marcou uma mudança relevante em relação ao 
+quadro observado no encerramento do ano anterior. Após um quarto trimestre caracterizado por acomodação 
+da demanda doméstica, com estabilidade do consumo das famílias e queda da FBCF , o início de 2026 mostrou 
+recomposição da absorção interna. Na série dessazonalizada, o consumo das famílias avançou 1,0%, enquanto 
+a FBCF cresceu 3,5%, contribuindo para a aceleração do PIB na margem. Esse desempenho reforça a leitura 
+GRÁFICO 5
+PIB: contribuição para a taxa de crescimento acumulada no ano (1o trim. 2026) 
+(Em p.p.)
+Fonte: IBGE.
+Elaboração: Grupo de Conjuntura da Dimac/Ipea.
+TABELA 3
+PIB por setores e atividades: contribuição para a taxa real de crescimento interanual e acumulada no ano¹
+(Em %)
+Fonte: IBGE. 
+Elaboração: Grupo de Conjuntura da Dimac/Ipea.
+Nota: 1 Valores aproximados.
+Obs.: Valores referentes ao PIB dizem respeito à taxa de crescimento, em porcentagem.
+  
+Trimestre/trimestre anterior dessazonalizado Trimestre/igual trimestre do ano anterior Acumulado 
+2T25 3T25 4T25 1T26 2T25 3T25 4T25 1T26 No ano 
+Em 
+quatro 
+trimestres 
+PIB a preços de mercado 0,34 0,10 0,26 1,10 2,36 1,82 1,84 1,84 1,84 1,97 
+Impostos sobre produtos 0,06 0,06 0,00 0,13 0,22 0,18 0,10 0,26 0,26 0,20 
+Valor adicionado a preços básicos 0,28 0,04 0,25 0,97 2,14 1,64 1,74 1,58 1,58 1,77 
+Agropecuária -0,12 -0,02 0,00 0,14 0,67 0,58 0,68 0,04 0,04 0,46 
+Indústria 0,11 0,04 -0,09 0,28 0,26 0,37 0,06 0,30 0,30 0,23 
+Extrativa 0,19 0,07 0,05 0,13 0,33 0,43 0,43 0,41 0,41 0,36 
+Indústria de transformação -0,05 -0,02 -0,09 0,05 -0,01 -0,09 -0,28 -0,11 -0,11 -0,11 
+Eletricidade e gás, água, esgoto, ativ. de  
+gestão de resíduos -0,02 -0,03 0,03 0,00 -0,06 -0,02 0,02 -0,04 -0,04 -0,03 
+Construção 0,00 0,02 -0,08 0,10 0,01 0,06 -0,10 0,04 0,04 0,00 
+Serviços 0,29 0,02 0,34 0,54 1,20 0,70 1,00 1,24 1,24 1,09 
+Comércio -0,02 0,00 0,00 0,10 0,12 0,08 -0,01 0,10 0,10 0,08 
+Transporte, armazenagem e correio 0,03 0,06 -0,05 -0,01 0,05 0,13 0,04 0,02 0,02 0,06 
+Informação e comunicação  0,04 0,04 0,04 0,09 0,20 0,16 0,20 0,23 0,23 0,20 
+Atividades financeiras, de seguros e serviços  
+relacionados 0,07 -0,07 0,21 -0,02 0,23 0,02 0,27 0,20 0,20 0,20 
+Atividades Imobiliárias 0,06 0,03 0,01 0,11 0,16 0,14 0,12 0,21 0,21 0,16 
+Outras atividades de serviços 0,12 -0,03 0,09 0,17 0,42 0,14 0,28 0,35 0,35 0,31 
+Adm., defesa, saúde e educação públicas e  
+seguridade social -0,01 0,01 0,04 0,11 0,03 0,02 0,09 0,14 0,14 0,08 
+ 
+-0,11
+-0,04
+0,02
+0,04
+0,04
+0,10
+0,14
+0,20
+0,21
+0,23
+0,26
+0,35
+0,41
+Indústrias de transformação
+Eletricidade e gás, água, esgoto, ativ. de gestão de resíduos
+Transporte, armazenagem e correio
+Agropecuária
+Construção
+Comércio
+Adm., defesa, saúde e educação públicas e seguridade social
+Atividades financeiras, de seguros e serviços relacionados
+Atividades Imobiliárias
+Informação e comunicação
+Imposto
+Outras atividades de serviços
+Indústrias extrativas
+10
+Carta de Conjuntura      | 71 | Nota 12 | 2˚ trimestre de 2026
+de que, embora os efeitos defasados da política monetária restritiva continuem condicionando os componentes 
+mais sensíveis ao crédito, fatores como a resiliência do mercado de trabalho, o crescimento real dos rendimentos 
+e estímulos à renda e ao crédito ajudaram a sustentar a demanda interna no primeiro trimestre. Em contrapar-
+tida, o setor externo voltou a atuar em sentido negativo na margem, com queda das exportações (-1,7%) e alta 
+das importações (4,4%), esta última influenciada tanto pela recomposição da demanda doméstica quanto por 
+fatores pontuais associados à importação de bens de capital. Em conjunto, a composição pela demanda indica 
+que a aceleração do PIB no início de 2026 esteve associada à retomada dos componentes domésticos(tabela 3).
+O consumo das famílias avançou 1,0% no primeiro trimestre de 2026 na comparação dessazonalizada, após ter 
+permanecido praticamente estagnado nos dois últimos trimestres de 2025, sinalizando recomposição do gasto 
+das famílias no início do ano. Na comparação com o mesmo período de 2025, a alta foi de 1,7%, também acima 
+do resultado registrado no quarto trimestre de 2025 (1,0%). Os resultados vieram um pouco acima das nossas 
+previsões, que apontavam para crescimento de 0,7% na margem e de 1,3% em termos interanuais. Com isso, 
+o consumo das famílias voltou a exercer papel relevante na sustentação da demanda interna no início de 2026 
+(gráfico 6).
+A recuperação do consumo no primeiro trimestre deve ser entendida à luz da combinação entre, de um lado, 
+os efeitos ainda restritivos da política monetária e, de outro, a resiliência do mercado de trabalho e da renda. 
+Embora o custo elevado do crédito, o comprometimento da renda com o serviço da dívida e a inadimplência 
+continuem impondo limites ao avanço do gasto das famílias, o mercado de trabalho permaneceu aquecido, com 
+crescimento real dos rendimentos e expansão da massa salarial. Além disso, fatores como o reajuste do salário 
+mínimo, as transferências públicas e medidas voltadas à sustentação da renda e do crédito ajudaram a amortecer 
+os efeitos do aperto monetário sobre a demanda por bens e serviços. Nesse contexto, a recomposição do consu-
+mo no primeiro trimestre indica que, no curto prazo, os vetores de sustentação da renda disponível prevaleceram 
+sobre os freios impostos pelas condições financeiras restritivas.
+Para os próximos trimestres, a sinalização segue relativamente cautelosa, embora um pouco mais otimista. A 
+principal incerteza é saber se os vetores que sustentaram o consumo no primeiro trimestre – mercado de trabalho 
+resiliente, crescimento real da renda e medidas de apoio à renda e ao crédito – continuarão prevalecendo sobre 
+os efeitos do nível de juros real ainda elevado. Do ponto de vista dos preços, a evolução dos deflatores implícitos 
+mostra comportamentos opostos entre o agregado da economia e o consumo das famílias: enquanto o deflator 
+do PIB acelerou de 5,1% no quarto trimestre de 2025 para 5,5% no primeiro trimestre de 2026, o deflator do 
+consumo das famílias desacelerou de 5,2% para 4,4% na mesma base de comparação (gráfico 7). Esse alívio 
+TABELA 4
+PIB e componentes de demanda: evolução das taxas de crescimento
+(Em %)
+Fonte: IBGE. 
+Elaboração: Grupo de Conjuntura da Dimac/Ipea.
+  
+Trimestre/trimestre anterior 
+dessazonalizado 
+Trimestre/igual trimestre do ano 
+anterior Acumulado 
+2T25 3T25 4T25 1T26 2T25 3T25 4T25 1T26 No ano Em quatro 
+trimestres 
+PIB a preços de mercado 0,3 0,1 0,3 1,1 2,4 1,8 1,8 1,8 1,8 2,0 
+Absorção interna (demanda internal final + variação de estoques) -0,1 -0,3 -0,3 1,4 2,7 0,9 -0,7 0,8 0,8 0,9 
+Demanda interna final -0,1 0,3 -0,1 1,2 2,0 1,0 0,8 1,4 1,4 1,3 
+Consumo total 0,4 0,3 0,3 1,0 1,6 0,7 1,6 2,0 2,0 1,4 
+Consumo das famílias 0,5 0,0 0,2 1,0 1,8 0,4 1,0 1,7 1,7 1,2 
+Consumo do governo 0,0 1,3 0,9 0,4 0,9 1,8 3,6 2,8 2,8 2,3 
+FBCF -1,8 0,2 -3,4 3,5 4,1 2,3 -3,1 -1,4 -1,4 0,4 
+Exportações de bens e serviços 1,0 3,8 3,7 -1,7 2,1 7,2 14,2 7,4 7,4 7,6 
+Importaçoes de bens e serviços -2,1 -0,1 -1,1 4,4 3,9 2,2 -0,3 1,2 1,2 1,7 
+ 
+11
+Carta de Conjuntura      | 71 | Nota 12 | 2˚ trimestre de 2026
+relativo também ajuda a sustentar o poder de compra, mas não elimina a dúvida sobre a continuidade desse 
+impulso ao longo do ano, sobretudo diante da persistência de condições financeiras restritivas. O resultado deixa 
+um carry-over de 1,0% para 2026. O resultado do primeiro trimestre deixa um carry-over de 1,3% para 2026.
+O consumo do governo, por sua vez, avançou 0,4% na comparação dessazonalizada e 2,8% em relação ao mes-
+mo trimestre de 2025, mantendo contribuição positiva para a demanda interna no início de 2026. Embora te-
+nha desacelerado na margem em relação ao desempenho observado no quarto trimestre de 2025, o componente 
+continuou crescendo em ritmo relevante na comparação interanual. Os resultados vieram acima do que haví -
+amos antecipado em nossas projeções, que apontavam altas de 0,1% na margem e de 2,0% em termos anuais. 
+Com isso, o consumo do governo seguiu funcionando como um vetor de sustentação da absorção doméstica, em 
+um contexto no qual a recomposição do consumo das famílias e da FBCF também contribuiu para a aceleração 
+do PIB no trimestre. O resultado do primeiro trimestre deixa um carry-over de 1,7% para 2026.
+A FBCF voltou a crescer no primeiro trimestre de 2026, avançando 3,5% na comparação com ajuste sazonal, 
+após a queda de 3,4% registrada no quarto trimestre de 2025. Com isso, o componente praticamente recompôs 
+a perda observada no período anterior, indicando recuperação importante do investimento na margem, embora 
+esse movimento deva ser interpretado com cautela. Na comparação interanual, a FBCF ainda registrou retração 
+de 1,4%, a segunda queda consecutiva nessa base de comparação, refletindo sobretudo o desempenho negativo 
+da produção interna de bens de capital. Assim, apesar da melhora observada no início do ano, o componente 
+segue condicionado por um ambiente de juros reais elevados, condições financeiras restritivas e incertezas que 
+continuam pesando sobre as decisões de investimento.
+Do ponto de vista dos vetores, a alta da FBCF na margem foi favorecida pelo avanço da construção e das im -
+portações de bens de capital. Nesse último caso, indicadores complementares apontam influência relevante da 
+importação de uma plataforma de petróleo em fevereiro, fator que ajudou a impulsionar o consumo aparente de 
+máquinas e equipamentos e, simultaneamente, as importações do trimestre. Por essa razão, parte da recuperação 
+observada na FBCF parece refletir um componente pontual e de natureza mais mecânica, não necessariamente 
+uma retomada ampla e disseminada do investimento produtivo privado. Em contrapartida, a queda interanual 
+da produção doméstica de bens de capital sugere que o núcleo mais sensível ao custo do financiamento perma-
+nece frágil. Com o resultado do primeiro trimestre, o carry-over para 2026 ficou em 0,5%.
+GRÁFICO 7
+PIB – deflatores: evolução das taxas de variação acumuladas 
+em quatro trimestres
+(Em %)
+Fonte: Ipea e IBGE.
+Elaboração: Grupo de Conjuntura da Dimac/Ipea.
+6,1
+6,5
+5,4
+5,1
+5,5
+6,0
+6,7
+5,7
+5,2
+4,4
+2025.I 2025.II 2025.III 2025.IV 2026.I
+Deflator do PIB Deflator Consumo das Famílias
+GRÁFICO 6
+Consumo das famílias: evolução das taxas de crescimento 
+trimestral e dessazonalizado
+(Em %)
+Fonte: IBGE.
+Elaboração: Grupo de Conjuntura da Dimac/Ipea.
+2,0
+0,8
+1,0
+0,2
+0,9 1,0 0,8
+2,4
+1,0
+1,4
+-0,5
+0,3 0,5
+0,0
+0,2
+1,0
+5,5
+4,8 4,6
+4,0
+3,1 3,3
+2,6
+5,2 5,4
+5,8
+4,0
+2,2
+1,8
+0,4
+1,0
+1,7
+-2
+-1
+0
+1
+2
+3
+4
+5
+6
+7
+2022.II
+2022.III
+2022.IV
+2023.I
+2023.II
+2023.III
+2023.IV
+2024.I
+2024.II
+2024.III
+2024.IV
+2025.I
+2025.II
+2025.III
+2025.IV
+2026.I
+variação contra o trimestre imediatamente anterior
+variação contra mesmo trimestre do ano anterior
+12
+Carta de Conjuntura      | 71 | Nota 12 | 2˚ trimestre de 2026
+A taxa de investimento da economia, medida pela razão FBCF/PIB em termos nominais, atingiu 16,5% no 
+primeiro trimestre de 2026, abaixo dos 17,6% observados no mesmo período de 2025. A taxa de poupança 
+bruta, por sua vez, ficou em 15,5%, ante 15,8% no primeiro trimestre do ano anterior. Com isso, a poupan -
+ça externa foi de 1,0% do PIB no trimestre, abaixo do observado no quarto trimestre de 2025, mas ainda 
+positiva (gráfico 8).
+Para os próximos trimestres, o resultado melhora a 
+leitura corrente do investimento em relação ao fim 
+de 2025, mas não elimina a cautela. A continuida -
+de da recuperação dependerá de uma melhora mais 
+consistente dos componentes domésticos da FBCF , 
+em particular da produção física de bens de capital, 
+que ainda apresentou desempenho fraco no primeiro 
+trimestre – resultado que, em boa medida, reflete a 
+fragilidade persistente da indústria de transformação. 
+Além disso, uma retomada mais disseminada do ci -
+clo de investimento dependerá da redução dos níveis 
+gerais de incerteza, tanto internos quanto externos, e 
+de um alívio mais efetivo das condições monetárias. 
+Embora o ciclo de queda da Selic já tenha começado, 
+a taxa de juros ainda permanece em patamar muito 
+elevado, o que deve continuar restringindo decisões 
+de investimento por algum tempo. Nesse sentido, a alta da FBCF no primeiro trimestre representa uma 
+melhora importante, mas ainda insuficiente para caracterizar uma recuperação robusta e disseminada do 
+investimento produtivo.
+No setor externo, o desempenho do primeiro trimestre marcou uma inversão em relação ao observado no 
+encerramento de 2025. As exportações de bens e serviços recuaram 1,7% na comparação com ajuste sazonal, 
+após terem registrado forte crescimento ao longo do segundo semestre do ano passado. Ainda assim, na com -
+paração interanual, o volume exportado avançou 7,4%, sustentado principalmente por segmentos associados 
+a commodities e a alguns bens industriais específicos, com destaque para extração de petróleo e gás natural, 
+produtos alimentícios e outros equipamentos de transporte. Esse resultado reforça a leitura de que, apesar da 
+contribuição negativa na margem, os setores mais vinculados ao cenário externo continuaram funcionando 
+como importante fonte autônoma de sustentação do crescimento em relação ao mesmo período do ano an -
+terior.
+As importações, por sua vez, avançaram 4,4% na série dessazonalizada, em movimento compatível com a re -
+composição da demanda interna e com a recuperação da FBCF no trimestre. Parte desse crescimento também 
+esteve associada ao aumento das importações de bens de capital, influenciado pela entrada de uma plataforma 
+de petróleo em fevereiro, fator que elevou simultaneamente o consumo aparente de máquinas e equipamen -
+tos e o volume importado. Na comparação interanual, as importações cresceram 1,2%, com destaque, se -
+gundo o IBGE, para veículos automotores, derivados de petróleo e produtos farmoquímicos e farmacêuticos.
+Esse quadro resultou em contribuição líquida negativa do setor externo para o crescimento do PIB na margem, 
+revertendo o papel de contrapeso exercido pelas exportações líquidas no quarto trimestre de 2025. Do ponto de 
+vista analítico, contudo, é importante distinguir dois movimentos. De um lado, a alta das importações reflete a 
+recuperação da absorção doméstica e a presença de fatores pontuais ligados a bens de capital, o que reduz a con-
+GRÁFICO 8
+Poupança externa: evolução das taxas de investimento 
+versus taxas de poupança interna
+(Em %)
+Fonte: IBGE. 
+Elaboração: Grupo de Conjuntura da Dimac/Ipea.
+15,9 16,6 16,4
+17,4 17,2 17,6
+16,6 17,3
+16,0 16,5
+11,1
+15,2
+16,1
+14,5
+10,8
+15,8 16,5
+14,5
+11,0
+15,5
+4,8
+1,4
+0,3
+2,9
+6,3
+1,8
+0,0
+2,7
+5,1
+1,0
+-4
+1
+6
+11
+16
+21
+2023.IV
+2024.I
+2024.II
+2024.III
+2024.IV
+2025.I
+2025.II
+2025.III
+2025.IV
+2026.I
+Taxa de investimento Taxa de poupança Poupança externa
+13
+Carta de Conjuntura      | 71 | Nota 12 | 2˚ trimestre de 2026
+tribuição líquida do setor externo no curto prazo. De outro lado, o bom desempenho interanual das exportações 
+mostra que a pauta associada a commodities e a setores mais exógenos ao ciclo doméstico continuou oferecendo 
+suporte relevante à atividade. Em conjunto, o setor externo reforça a leitura de que a aceleração do PIB no 
+primeiro trimestre esteve mais ligada à demanda interna, enquanto os vetores externos seguiram importantes, 
+sobretudo na comparação anual. O resultado do primeiro trimestre deixa carry-over de 3,2% e de 3,0% para 
+exportações e importações, respectivamente.
+BOX 2
+Taxas de variação no primeiro trimestre de 2026: contribuições pela ótica da despesa
+•	 No primeiro trimestre de 2026, a alta de 1,10% do PIB na margem foi explicada pela absorção interna, 
+cuja contribuição estimada foi de 2,18 p.p. O destaque ficou por conta da demanda interna final (1,27 
+p.p.), com contribuições positivas do consumo das famílias (0,61 p.p.), da FBCF (0,59 p.p.) e do con-
+sumo do governo (0,07 p.p.), além de contribuição relevante da variação de estoques (0,90 p.p.). Em 
+contrapartida, as exportações líquidas subtraíram 1,08 p.p. do crescimento na margem, refletindo queda 
+das exportações e alta das importações no trimestre (tabela 5).
+•	 Na comparação interanual, a absorção interna também contribuiu positivamente para o crescimento 
+do PIB, adicionando 0,73 p.p. no primeiro trimestre. A demanda interna final teve contribuição mais 
+expressiva (1,41 p.p.), impulsionada principalmente pelo consumo das famílias (1,11 p.p.) e pelo con -
+sumo do governo (0,53 p.p.). Por outro lado, a FBCF (-0,23 p.p.) e a variação de estoques (-0,67 p.p.) 
+exerceram impactos negativos nessa base de comparação.
+•	 O setor externo, diferentemente do observado na margem, contribuiu positivamente para o crescimen-
+to interanual do PIB, adicionando 1,11 p.p. no primeiro trimestre. Esse resultado refletiu o avanço 
+das exportações, cuja contribuição foi de 1,32 p.p., parcialmente compensado pelo efeito negativo das 
+importações (-0,21 p.p.). Assim, embora o setor externo tenha atuado como vetor de desaceleração na 
+passagem para o primeiro trimestre, continuou oferecendo suporte relevante na comparação com o 
+mesmo período do ano anterior.
+•	 No acumulado em quatro trimestres, o crescimento de 2,0% do PIB seguiu sustentado tanto pela de -
+manda interna quanto pelo setor externo. A absorção interna adicionou 0,91 p.p., com destaque para a 
+demanda interna final (1,27 p.p.) e, dentro dela, para o consumo das famílias (0,76 p.p.) e o consumo 
+do governo (0,44 p.p.). A FBCF teve contribuição positiva, porém modesta (0,07 p.p.), enquanto a 
+variação de estoques retirou 0,36 p.p. do crescimento acumulado.
+•	 Também no acumulado em quatro trimestres, as exportações líquidas adicionaram 1,05 p.p. ao cresci -
+mento do PIB, resultado de contribuição positiva das exportações (1,35 p.p.) e negativa das importações 
+(-0,30 p.p.). Em conjunto, as contribuições reforçam a leitura de que o primeiro trimestre combinou 
+recomposição da demanda doméstica na margem com manutenção de suporte externo na comparação 
+anual, embora a alta das importações tenha reduzido a contribuição líquida do setor externo no curto 
+prazo.
+Elaboração: Grupo de Conjuntura da Dimac/Ipea.
+14
+Carta de Conjuntura      | 71 | Nota 12 | 2˚ trimestre de 2026
+TABELA 5
+PIB pela ótica da despesa: contribuição para a taxa real de crescimento trimestral
+(Em p.p.)
+Fonte: IBGE. 
+Elaboração: Grupo de Conjuntura da Dimac/Ipea.
+Nota: 1 Valores referentes ao PIB dizem respeito à taxa de crescimento, em porcentagem.
+  
+Trimestre/trimestre anterior 
+dessazonalizado 
+Trimestre/igual trimestre do ano 
+anterior Acumulado 
+2T25 3T25 4T25 1T26 2T25 3T25 4T25 1T26 No ano Em quatro 
+trimestres 
+PIB1 0,3 0,1 0,3 1,1 2,4 1,8 1,8 1,8 1,8 2,0 
+Absorção interna (demanda internal final + variação de estoques) -0,21 -0,59 -0,61 2,18 2,67 0,93 -0,77 0,73 0,73 0,91 
+Demanda interna final 0,05 0,26 -0,26 1,27 2,01 0,97 0,76 1,41 1,41 1,27 
+Consumo total 0,35 0,22 0,32 0,68 1,32 0,57 1,29 1,64 1,64 1,20 
+Consumo das famílias 0,34 -0,02 0,15 0,61 1,15 0,23 0,61 1,11 1,11 0,76 
+Consumo do governo 0,01 0,24 0,17 0,07 0,17 0,34 0,68 0,53 0,53 0,44 
+FBCF -0,30 0,04 -0,58 0,59 0,69 0,39 -0,53 -0,23 -0,23 0,07 
+Variação de estoques -0,25 -0,85 -0,35 0,90 0,66 -0,04 -1,53 -0,67 -0,67 -0,36 
+Exportações líquidas de bens e serviços 0,55 0,69 0,87 -1,08 -0,31 0,90 2,61 1,11 1,11 1,05 
+Exportações 0,18 0,67 0,67 -0,31 0,37 1,29 2,55 1,32 1,32 1,35 
+Importações 0,36 0,02 0,20 -0,77 -0,69 -0,39 0,06 -0,21 -0,21 -0,30 
+ 
+GRÁFICO 9
+Taxas de crescimento: PIB versus versus absorção doméstica 
+– taxa trimestral interanual
+Fonte: IBGE. 
+Elaboração: Grupo de Conjuntura da Dimac/Ipea.
+4,3
+2,7
+4,4
+3,9
+2,4 2,4 2,5
+3,5
+4,1
+3,6 3,1 2,4
+1,8 1,8 1,8
+4,7
+1,3
+3,4
+1,7
+-0,7
+0,8
+3,0
+5,4
+7,0
+6,5
+5,2
+2,7
+0,9
+-0,7
+0,8
+-5
+-3
+-1
+1
+3
+5
+7
+9
+2022.III
+2022.IV
+2023.I
+2023.II
+2023.III
+2023.IV
+2024.I
+2024.II
+2024.III
+2024.IV
+2025.I
+2025.II
+2025.III
+2025.IV
+2026.I
+PIB Absorção doméstica
+GRÁFICO 10
+Taxas de crescimento: PIB versus PIB sem estoques – taxa 
+trimestral interanual
+Fonte: IBGE. 
+Elaboração: Grupo de Conjuntura da Dimac/Ipea.
+4,3
+2,7
+4,4
+3,9
+2,4 2,4 2,5
+3,5
+4,1
+3,6
+3,1
+2,4
+1,8 1,8 1,8
+3,8
+5,1
+4,1
+4,6 4,5
+3,4
+3,7
+3,0 3,2
+1,3 1,2
+1,7 1,9
+3,4
+2,5
+-1
+0
+1
+2
+3
+4
+5
+6
+2022.III
+2022.IV
+2023.I
+2023.II
+2023.III
+2023.IV
+2024.I
+2024.II
+2024.III
+2024.IV
+2025.I
+2025.II
+2025.III
+2025.IV
+2026.I
+PIB PIB (s/ var. estoques)
+GRÁFICO 11
+Contribuição para a taxa real de crescimento trimestral interanual do PIB: absorção doméstica versus exportações líquidas
+(Em p.p.)
+Fonte: IBGE. 
+Elaboração: Grupo de Conjuntura da Dimac/Ipea.
+3,6
+-0,8 -0,5
+1,6 1,1 2,1
+3,0
+1,6
+-0,6 -1,7 -2,6 -2,7 -2,1
+-0,3 0,9
+2,6
+1,1
+-2,1
+4,3
+4,8
+1,1
+3,4 1,8
+-0,7
+0,8 3,1
+5,1
+6,8 6,3
+5,3
+2,7 0,9
+-0,8
+0,7
+-4
+-2
+0
+2
+4
+6
+8
+2022.I
+2022.II
+2022.III
+2022.IV
+2023.I
+2023.II
+2023.III
+2023.IV
+2024.I
+2024.II
+2024.III
+2024.IV
+2025.I
+2025.II
+2025.III
+2025.IV
+2026.I
+Exportações líquidas Absorção doméstica
+15
+Carta de Conjuntura      | 71 | Nota 12 | 2˚ trimestre de 2026
+As opiniões emitidas nesta publicação são de exclusiva e inteira responsabilidade dos autores, não exprimindo, necessariamente, o ponto 
+de vista do Instituto de Pesquisa Econômica Aplicada ou do Ministério do Planejamento.
+É permitida a reprodução deste texto e dos dados nele contidos, desde que citada a fonte. Reproduções para fins comerciais são proibidas.
+Diretoria de Estudos e Políticas Macroeconômicas (Dimac):
+Claudio Roberto Amitrano (Diretor)
+Mônica Mora y Araujo (Coordenadora-Geral de Estudos e Políticas Macroeconômicas)
+Corpo Editorial da Carta de Conjuntura:
+Claudio Hamilton Matos dos Santos (Editor)
+Estêvão Kopschitz Xavier Bastos
+Leonardo Mello de Carvalho
+Marco Antônio Freitas de Hollanda Cavalcanti
+Maria Andréia Parente Lameiras
+Mônica Mora y Araujo 
+Sandro Sacchet de Carvalho
+Sergio Fonseca Ferreira
+Equipe de Assistentes:
+Caio Rodrigues Gomes Leite 
+Marcelo Guedes Pecly
+Tarsylla da Silva de Godoy Oliveira
+Equipe Administrativa:
+Aline Conceição Santos
+Carla Nunes Menezes
+Rosanne Rodrigues Barbosa
+Design/Diagramação:
+Augusto Lopes dos Santos Borges
+Leonardo Simão Lago Alvite

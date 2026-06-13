@@ -1,0 +1,50 @@
+   ▲ Next.js 15.5.19
+   - Local:        http://localhost:3000
+   - Network:      http://0.0.0.0:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.8s
+ ○ Compiling / ...
+ ✓ Compiled / in 3.4s (653 modules)
+ GET / 200 in 3819ms
+ ○ Compiling /atividade ...
+ ✓ Compiled /atividade in 3.8s (1793 modules)
+ GET /atividade 200 in 4358ms
+ ○ Compiling /precos ...
+ ✓ Compiled /precos in 965ms (1804 modules)
+ GET /precos 200 in 1385ms
+ ✓ Compiled /juros-credito in 328ms (1812 modules)
+ GET /juros-credito 200 in 491ms
+ ○ Compiling /trabalho ...
+ ✓ Compiled /trabalho in 602ms (1820 modules)
+ GET /trabalho 200 in 6018ms
+ ✓ Compiled /projecoes in 477ms (1828 modules)
+ GET /projecoes 200 in 686ms
+ GET /atividade 200 in 355ms
+ GET /precos 200 in 379ms
+ GET /juros-credito 200 in 96ms
+ GET /trabalho 200 in 11040ms
+ GET /projecoes 200 in 151ms
+ ✓ Compiled in 1657ms (1816 modules)
+ ✓ Compiled in 699ms (1816 modules)
+ ✓ Compiled /atividade in 495ms (1001 modules)
+ GET /atividade 200 in 1126ms
+ GET /juros-credito?reload=143400205 200 in 384ms
+ ○ Compiling / ...
+ ✓ Compiled / in 813ms (1007 modules)
+ GET / 200 in 1136ms
+ GET /juros-credito?reload=1958195833 200 in 400ms
+ ✓ Compiled in 510ms (999 modules)
+ GET / 200 in 164ms
+ GET /?reload=1666399311 200 in 418ms
+ ✓ Compiled in 1312ms (1834 modules)
+ GET / 200 in 177ms
+ ✓ Compiled in 1084ms (1834 modules)
+ GET / 200 in 188ms
+ GET /?reload=1583202044 200 in 336ms
+ GET /projecoes 200 in 102ms
+ GET /juros-credito 200 in 135ms
+ GET /trabalho 200 in 13060ms
+ GET /trabalho 200 in 9051ms
+ GET /atividade 200 in 180ms
+ GET / 200 in 150ms

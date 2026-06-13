@@ -118,7 +118,7 @@ export function CreditConditionsPanel({ rows, source }: { rows: Row[]; source: s
       <div className="credit-conditions-grid">
         <ChartCard title={config.title} subtitle={config.subtitle} option={option} tall source={source} />
         <article className="insight-card">
-          <h2>Insights Econômicos</h2>
+          <h2>Aperto financeiro e risco de crédito</h2>
           <p>{firstParagraph}</p>
           <p>{secondParagraph}</p>
           <div className="highlight-boxes">
@@ -131,8 +131,9 @@ export function CreditConditionsPanel({ rows, source }: { rows: Row[]; source: s
             ))}
           </div>
           <p>
-            O ponto central é acompanhar nível e direção ao mesmo tempo. Um indicador ainda alto, mas em queda, sugere alívio gradual;
-            uma leitura baixa, mas em aceleração, pode antecipar deterioração das condições financeiras.
+            O ponto central é acompanhar nível, direção e composição. Juros ou inadimplência ainda altos, mesmo em queda,
+            continuam restringindo consumo e investimento; leituras em aceleração podem antecipar crédito mais seletivo,
+            renegociações mais caras e menor fôlego da demanda doméstica.
           </p>
         </article>
       </div>

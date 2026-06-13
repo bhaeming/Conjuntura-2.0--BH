@@ -22,11 +22,10 @@ export default function Home() {
         <div>
           <span className="eyebrow">PAINEL DE CONJUNTURA 2.0</span>
           <h1>Economia brasileira,<br /><em>em perspectiva.</em></h1>
-          <p>Indicadores essenciais organizados para uma leitura clara, r&aacute;pida e compar&aacute;vel do cen&aacute;rio econ&ocirc;mico.</p>
+          <p>Indicadores oficiais organizados para interpretar o ciclo econ&ocirc;mico brasileiro: atividade, pre&ccedil;os, juros, cr&eacute;dito, trabalho e cen&aacute;rios prospectivos.</p>
         </div>
         <div className="author-hover-card" tabIndex={0} aria-label="Sobre o autor">
           <div className="author-card-default">
-            <span>Feature</span>
             <strong>Sobre o autor</strong>
             <small>Conhe&ccedil;a a curadoria por tr&aacute;s do painel</small>
           </div>
@@ -48,6 +47,18 @@ export default function Home() {
       </div>
       <section className="snapshot">
         <div><span className="eyebrow">RESUMO EXECUTIVO</span><h2>&Uacute;ltimos indicadores</h2></div>
+        <article className="insight-card">
+          <h2>Leitura de conjuntura</h2>
+          <p>
+            O painel resume uma economia ainda sustentada pelo mercado de trabalho e por algum dinamismo da atividade, mas condicionada por
+            infla&ccedil;&atilde;o persistente, juros elevados e cr&eacute;dito caro. A combina&ccedil;&atilde;o entre IPCA, Selic, desemprego e IBC-Br ajuda a avaliar
+            se o crescimento corrente vem de fundamentos disseminados ou de vetores mais pontuais.
+          </p>
+          <p>
+            A leitura econ&ocirc;mica deve considerar n&iacute;vel e dire&ccedil;&atilde;o simultaneamente: infla&ccedil;&atilde;o em queda ainda pode pressionar a renda se permanecer alta,
+            juros est&aacute;veis em patamar elevado seguem restringindo consumo e investimento, e mercado de trabalho resiliente pode amortecer parte desses efeitos.
+          </p>
+        </article>
         <DataDownloadButton
           title="Resumo executivo"
           datasets={[

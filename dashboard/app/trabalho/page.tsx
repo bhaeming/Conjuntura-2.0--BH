@@ -26,7 +26,12 @@ export default function Trabalho() {
 
   return (
     <AppShell active="/trabalho">
-      <DashboardHeader eyebrow="Emprego e renda" title="Mercado de trabalho" description="Indicadores trimestrais de emprego, participacao e renda." reference={latest ? month(latest.date) : "n/d"} />
+      <DashboardHeader
+        eyebrow="Emprego e renda"
+        title="Mercado de trabalho"
+        description="Emprego, renda e formalizacao definem a sustentacao do consumo: o quadro melhora quando ocupacao e rendimento avancam sem deterioracao da qualidade dos postos."
+        reference={latest ? month(latest.date) : "n/d"}
+      />
       <div className="content">
         <DataDownloadButton
           title="Mercado de trabalho"
@@ -43,8 +48,8 @@ export default function Trabalho() {
           })}
         </div>
         <BrazilUnemploymentMap rows={socioUf.length ? socioUf : desempUf} geoJson={geoJson} />
-        <SeriesChart rows={rows} series={{ taxa_desemprego: "Desemprego", taxa_ocupacao: "Ocupacao", informalidade: "Informalidade", desalentadas: "Desalentadas" }} title="Indicadores do mercado de trabalho" subtitle="Taxas trimestrais, em percentual" suffix="%" source={source} />
-        <SeriesChart rows={rows} series={{ renda_media: "Renda media" }} title="Rendimento medio real" subtitle="Valor em reais" source={source} insightPosition="left" />
+        <SeriesChart rows={rows} series={{ taxa_desemprego: "Desemprego", taxa_ocupacao: "Ocupacao", informalidade: "Informalidade", desalentadas: "Desalentadas" }} title="Indicadores do mercado de trabalho" subtitle="Taxas trimestrais para avaliar ociosidade, ocupacao e qualidade dos vinculos" suffix="%" source={source} />
+        <SeriesChart rows={rows} series={{ renda_media: "Renda media" }} title="Rendimento medio real" subtitle="Valor em reais e principal canal de sustentacao do consumo" source={source} insightPosition="left" />
       </div>
     </AppShell>
   );

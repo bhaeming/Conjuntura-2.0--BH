@@ -23,15 +23,47 @@ function fmt(value: number | null) {
 
 export function ProjectionChart({ rows, source }: { rows: Row[]; source: string }) {
   const visible = useMemo(() => rows.slice(-48), [rows]);
-  const latestProjection = [...rows].reverse().find((row) => row.tipo === "projecao");
-  const firstProjection = rows.find((row) => row.tipo === "projecao");
-  const method = String(firstProjection?.metodo ?? "VAR");
-  const projected = numeric(latestProjection?.consumo_projecao);
-  const low = numeric(latestProjection?.consumo_cenario_baixo);
-  const high = numeric(latestProjection?.consumo_cenario_alto);
+  const firstProjectionIndex = visible.findIndex((row) => row.tipo === "projecao");
+  const projectionStartIndex = firstProjectionIndex > 0 ? firstProjectionIndex - 1 : firstProjectionIndex;
+  const targetProjection =
+    rows.find((row) => row.tipo === "projecao" && String(row.date) === "2026-12-31") ??
+    [...rows].reverse().find((row) => row.tipo === "projecao");
+  const projected = numeric(targetProjection?.consumo_projecao);
+  const pessimistic = numeric(targetProjection?.consumo_cenario_pessimista);
+  const optimistic = numeric(targetProjection?.consumo_cenario_otimista);
+  const latestObserved = [...rows].reverse().find((row) => row.tipo === "observado");
+  const latestIpca = numeric(latestObserved?.ipca_12m);
+  const latestCredit = numeric(latestObserved?.credito_pf_12m);
+
+  const projectionValue = (row: Row, index: number) => {
+    if (index === projectionStartIndex) return numeric(row.consumo_observado);
+    return row.tipo === "projecao" ? numeric(row.consumo_projecao) : null;
+  };
+
+  const scenarioValue = (row: Row, index: number, key: "consumo_cenario_pessimista" | "consumo_cenario_otimista") => {
+    if (index === projectionStartIndex) return numeric(row.consumo_observado);
+    return row.tipo === "projecao" ? numeric(row[key]) : null;
+  };
+
+  const bandBase = (row: Row, index: number, key: "consumo_cenario_pessimista" | "consumo_projecao") => {
+    if (index === projectionStartIndex) return numeric(row.consumo_observado);
+    return row.tipo === "projecao" ? numeric(row[key]) : null;
+  };
+
+  const bandDistance = (
+    row: Row,
+    index: number,
+    lowerKey: "consumo_cenario_pessimista" | "consumo_projecao",
+    upperKey: "consumo_projecao" | "consumo_cenario_otimista",
+  ) => {
+    if (index === projectionStartIndex) return 0;
+    const lower = numeric(row[lowerKey]);
+    const upper = numeric(row[upperKey]);
+    return lower == null || upper == null ? null : upper - lower;
+  };
 
   const option: EChartsOption = {
-    color: ["#087f5b", "#1677a8", "#b6ddd1", "#b6ddd1"],
+    color: ["#087f5b", "#1677a8", "#83c5be", "#83c5be"],
     animationDuration: 700,
     tooltip: {
       trigger: "axis",
@@ -46,7 +78,12 @@ export function ProjectionChart({ rows, source }: { rows: Row[]; source: string 
         ].join("<br/>");
       },
     },
-    legend: { bottom: 0, icon: "roundRect", textStyle: { color: "#52606d" } },
+    legend: {
+      bottom: 0,
+      icon: "roundRect",
+      data: ["Observado", "Projeção central", "Cenário pessimista", "Cenário otimista"],
+      textStyle: { color: "#52606d" },
+    },
     grid: { left: 20, right: 22, top: 24, bottom: 58, containLabel: true },
     xAxis: {
       type: "category",
@@ -73,23 +110,73 @@ export function ProjectionChart({ rows, source }: { rows: Row[]; source: string 
       {
         name: "Projeção central",
         type: "line",
-        data: visible.map((row) => numeric(row.consumo_projecao)),
+        data: visible.map((row, index) => projectionValue(row, index)),
         smooth: true,
         showSymbol: false,
         lineStyle: { width: 3, type: "dashed" },
       },
       {
-        name: "Cenário baixo",
+        name: "Base pessimismo",
         type: "line",
-        data: visible.map((row) => numeric(row.consumo_cenario_baixo)),
+        stack: "pessimistic-band",
+        data: visible.map((row, index) => bandBase(row, index, "consumo_cenario_pessimista")),
+        smooth: true,
+        showSymbol: false,
+        silent: true,
+        lineStyle: { opacity: 0 },
+        itemStyle: { opacity: 0 },
+        tooltip: { show: false },
+      },
+      {
+        name: "Faixa pessimista",
+        type: "line",
+        stack: "pessimistic-band",
+        data: visible.map((row, index) => bandDistance(row, index, "consumo_cenario_pessimista", "consumo_projecao")),
+        smooth: true,
+        showSymbol: false,
+        silent: true,
+        lineStyle: { opacity: 0 },
+        itemStyle: { opacity: 0 },
+        areaStyle: { color: "rgba(22, 119, 168, 0.12)" },
+        tooltip: { show: false },
+      },
+      {
+        name: "Base otimismo",
+        type: "line",
+        stack: "optimistic-band",
+        data: visible.map((row, index) => bandBase(row, index, "consumo_projecao")),
+        smooth: true,
+        showSymbol: false,
+        silent: true,
+        lineStyle: { opacity: 0 },
+        itemStyle: { opacity: 0 },
+        tooltip: { show: false },
+      },
+      {
+        name: "Faixa otimista",
+        type: "line",
+        stack: "optimistic-band",
+        data: visible.map((row, index) => bandDistance(row, index, "consumo_projecao", "consumo_cenario_otimista")),
+        smooth: true,
+        showSymbol: false,
+        silent: true,
+        lineStyle: { opacity: 0 },
+        itemStyle: { opacity: 0 },
+        areaStyle: { color: "rgba(22, 119, 168, 0.12)" },
+        tooltip: { show: false },
+      },
+      {
+        name: "Cenário pessimista",
+        type: "line",
+        data: visible.map((row, index) => scenarioValue(row, index, "consumo_cenario_pessimista")),
         smooth: true,
         showSymbol: false,
         lineStyle: { width: 1, type: "dotted" },
       },
       {
-        name: "Cenário alto",
+        name: "Cenário otimista",
         type: "line",
-        data: visible.map((row) => numeric(row.consumo_cenario_alto)),
+        data: visible.map((row, index) => scenarioValue(row, index, "consumo_cenario_otimista")),
         smooth: true,
         showSymbol: false,
         lineStyle: { width: 1, type: "dotted" },
@@ -102,17 +189,23 @@ export function ProjectionChart({ rows, source }: { rows: Row[]; source: string 
       <span className="eyebrow">Cenário prospectivo</span>
       <h2>Consumo das famílias</h2>
       <p>
-        A projeção é produzida no notebook econométrico dedicado, a partir dos dados já consolidados pelo pipeline:
-        PIB trimestral, IPCA em 12 meses, despesa do governo, juros de crédito PF e expansão do crédito PF.
+        O consumo das famílias perdeu fôlego de forma clara desde o fim de 2024. No acumulado em quatro trimestres,
+        a taxa saiu de 5,1% em 2024T4 para 1,2% em 2026T1, movimento coerente com uma economia ainda sustentada por
+        renda e mercado de trabalho, mas limitada pelo encarecimento do crédito e pela recomposição mais lenta do poder
+        de compra.
       </p>
       <p>
-        O modelo estimado é um {method}. A leitura deve ser interpretada como trajetória condicional, não como previsão
-        pontual fechada. O intervalo explicita a incerteza em torno da projeção central.
+        A trajetória central sugere encerramento de 2026 perto de {fmt(projected)}, com assimetria relevante entre
+        sustentação de renda e freios financeiros. O ano eleitoral pode reforçar transferências, reajustes e impulso
+        fiscal sobre a demanda, mas juros ao consumidor ainda acima de 60%, inflação em 12 meses próxima de {fmt(latestIpca)}
+        e um ambiente externo incerto limitam uma recuperação mais vigorosa. A expansão do crédito PF, em torno de
+        {fmt(latestCredit)}, ajuda a sustentar o gasto corrente, mas também amplia a sensibilidade das famílias ao serviço
+        da dívida e à inadimplência.
       </p>
       <div className="highlight-boxes">
-        <div><span>Última projeção</span><strong>{fmt(projected)}</strong><small>Consumo das famílias</small></div>
-        <div><span>Cenário baixo</span><strong>{fmt(low)}</strong><small>Faixa inferior</small></div>
-        <div><span>Cenário alto</span><strong>{fmt(high)}</strong><small>Faixa superior</small></div>
+        <div><span>Encerramento de 2026</span><strong>{fmt(projected)}</strong><small>Projeção central</small></div>
+        <div><span>Cenário otimista</span><strong>{fmt(optimistic)}</strong><small>Faixa superior</small></div>
+        <div><span>Cenário pessimista</span><strong>{fmt(pessimistic)}</strong><small>Faixa inferior</small></div>
       </div>
     </article>
   );
@@ -120,7 +213,7 @@ export function ProjectionChart({ rows, source }: { rows: Row[]; source: string 
   return (
     <ChartCard
       title="Projeção do consumo das famílias"
-      subtitle="Série observada e trajetória projetada para os próximos trimestres"
+      subtitle="Acumulado em quatro trimestres, com faixa de incerteza para o período projetado"
       option={option}
       tall
       source={source}

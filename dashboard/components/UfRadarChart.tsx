@@ -71,7 +71,7 @@ export function UfRadarChart({ rows }: { rows: Row[] }) {
 
   const radarInsight = (
     <article className="insight-card chart-side-insight">
-      <h2>Insights Econômicos</h2>
+      <h2>Difusão regional da atividade</h2>
       <p>
         O radar compara o crescimento regional do IBC nas UFs acompanhadas. O maior avanço em 12 meses aparece em
         <strong> {highestUf?.label ?? "n/d"}</strong> ({formatPct(highestUf?.dozeMeses ?? null)}), enquanto a menor leitura está em

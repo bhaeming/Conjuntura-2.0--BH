@@ -11,15 +11,18 @@ const source = "IBGE/BCB, elaboração própria (2026)";
 export default function Projecoes() {
   const rows = loadData("projecao_consumo_familias");
   const projections = rows.filter((row) => row.tipo === "projecao");
-  const first = projections.at(0);
+  const yearEnd2026 = projections.find((row) => String(row.date) === "2026-12-31") ?? projections.at(-1);
   const last = projections.at(-1);
+  const central = Number(yearEnd2026?.consumo_projecao ?? 0);
+  const optimistic = Number(yearEnd2026?.consumo_cenario_otimista ?? 0);
+  const pessimistic = Number(yearEnd2026?.consumo_cenario_pessimista ?? 0);
 
   return (
     <AppShell active="/projecoes">
       <DashboardHeader
         eyebrow="Cenários e projeções"
         title="Cenários e Projeções"
-        description="Trajetórias prospectivas construídas a partir dos indicadores observados do painel."
+        description="Leitura prospectiva do consumo das famílias em um ambiente de renda ainda resiliente, juros altos, inflação persistente e riscos externos relevantes."
         reference={last ? month(String(last.date)) : "n/d"}
       />
       <div className="content">
@@ -34,37 +37,45 @@ export default function Projecoes() {
         />
         <div className="kpi-grid three">
           <KpiCard
-            label="Primeiro trimestre projetado"
-            value={`${number(Number(first?.consumo_projecao ?? 0), 2)}%`}
-            reference={first ? month(String(first.date)) : ""}
+            label="Projeção central 2026"
+            value={`${number(central, 2)}%`}
+            reference={yearEnd2026 ? month(String(yearEnd2026.date)) : ""}
             source={source}
           />
           <KpiCard
-            label="Último trimestre projetado"
-            value={`${number(Number(last?.consumo_projecao ?? 0), 2)}%`}
-            reference={last ? month(String(last.date)) : ""}
+            label="Cenário otimista 2026"
+            value={`${number(optimistic, 2)}%`}
+            reference={yearEnd2026 ? month(String(yearEnd2026.date)) : ""}
             source={source}
           />
           <KpiCard
-            label="Método"
-            value={String(first?.metodo ?? "n/d")}
-            reference="Consumo das famílias"
+            label="Cenário pessimista 2026"
+            value={`${number(pessimistic, 2)}%`}
+            reference={yearEnd2026 ? month(String(yearEnd2026.date)) : ""}
             source={source}
           />
         </div>
         <ProjectionChart rows={rows} source={source} />
         <section className="insight-card projection-roadmap">
-          <span className="eyebrow">Próximos módulos</span>
-          <h2>Metodologia expansível para o PIB</h2>
+          <span className="eyebrow">Síntese econômica</span>
+          <h2>Demanda doméstica avança, mas sem folga financeira</h2>
           <p>
-            O consumo das famílias entra como primeiro módulo. A mesma estrutura pode ser replicada para PIB total,
-            agropecuária, indústria, serviços, despesa do governo e formação bruta de capital fixo conforme as variáveis
-            explicativas forem consolidadas no pipeline.
+            A projeção aponta um consumo das famílias em desaceleração controlada, não em ruptura. A atividade segue
+            apoiada por massa de renda, mercado de trabalho e algum impulso de crédito, mas a combinação de juros
+            elevados, inadimplência alta e inflação ainda pressionada reduz o espaço para uma expansão mais intensa dos
+            bens duráveis e dos segmentos mais dependentes de financiamento.
+          </p>
+          <p>
+            O ano eleitoral tende a aumentar a importância dos vetores fiscais e de renda disponível, o que pode sustentar
+            serviços e consumo corrente. O risco é que esse suporte encontre uma economia com condições financeiras ainda
+            restritivas e com choques externos capazes de pressionar preços de energia, alimentos, fretes e commodities. O
+            resultado central, portanto, é de crescimento positivo, mas moderado e vulnerável a deterioração inflacionária,
+            aperto financeiro global ou perda de dinamismo do mercado de trabalho.
           </p>
           <div className="projection-status-grid">
-            <div><span>Disponível</span><strong>Consumo das famílias</strong></div>
-            <div><span>Base pronta</span><strong>PIB e componentes</strong></div>
-            <div><span>Próxima etapa</span><strong>Modelos por componente</strong></div>
+            <div><span>Suporte</span><strong>Renda e crédito</strong></div>
+            <div><span>Freio</span><strong>Juros e inflação</strong></div>
+            <div><span>Risco</span><strong>Ambiente externo</strong></div>
           </div>
         </section>
       </div>

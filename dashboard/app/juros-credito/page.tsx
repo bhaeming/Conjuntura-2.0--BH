@@ -20,7 +20,12 @@ export default function JurosCredito() {
 
   return (
     <AppShell active="/juros-credito">
-      <DashboardHeader eyebrow="Condicoes financeiras" title="Juros e credito" description="Politica monetaria e condicoes do mercado de credito." reference={selic ? month(selic.date) : "n/d"} />
+      <DashboardHeader
+        eyebrow="Condicoes financeiras"
+        title="Juros e credito"
+        description="O mercado de credito mostra o principal canal de transmissao da politica monetaria: juros elevados, inadimplencia e seletividade financeira condicionam consumo e investimento."
+        reference={selic ? month(selic.date) : "n/d"}
+      />
       <div className="content">
         <DataDownloadButton
           title="Juros e credito"
@@ -36,8 +41,8 @@ export default function JurosCredito() {
           <KpiCard label="Juros total" value={`${number(juros?.value ?? 0, 2)}%`} reference={juros ? month(juros.date) : ""} source={source} />
           <KpiCard label="Inadimplencia total" value={`${number(inad?.value ?? 0, 2)}%`} reference={inad ? month(inad.date) : ""} source={source} />
         </div>
-        <SeriesChart rows={selicRows} series={{ selic: "Selic" }} title="Taxa basica de juros" subtitle="Meta Selic, em % ao ano" suffix="%" source={source} />
-        <SeriesChart rows={sgs} series={{ credito_pf: "Pessoa fisica", credito_pj: "Pessoa juridica", credito_total: "Total" }} title="Estoque de credito" subtitle="Saldo em milhoes de reais" source={source} insightPosition="left" />
+        <SeriesChart rows={selicRows} series={{ selic: "Selic" }} title="Taxa basica de juros" subtitle="Meta Selic em % ao ano e referencia para as condicoes financeiras" suffix="%" source={source} />
+        <SeriesChart rows={sgs} series={{ credito_pf: "Pessoa fisica", credito_pj: "Pessoa juridica", credito_total: "Total" }} title="Estoque de credito" subtitle="Saldo em milhoes de reais, com impacto sobre demanda corrente e investimento" source={source} insightPosition="left" />
         <CreditConditionsPanel rows={creditoCondicoes} source={source} />
       </div>
     </AppShell>

@@ -27,7 +27,7 @@ export default function Precos() {
       <DashboardHeader
         eyebrow="Inflacao"
         title="Precos"
-        description="Evolucao da inflacao ao consumidor e seus componentes."
+        description="A inflacao segue como restricao central para renda real, juros e consumo, com pressao distribuida entre livres, administrados e custos ao produtor."
         reference={latest ? month(latest.date) : "n/d"}
       />
       <div className="content">

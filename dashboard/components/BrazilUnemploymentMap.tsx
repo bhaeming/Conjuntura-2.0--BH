@@ -110,7 +110,7 @@ export function BrazilUnemploymentMap({ rows, geoJson }: { rows: Row[]; geoJson:
         <ReactECharts option={option} style={{ height: 520 }} notMerge lazyUpdate />
       </article>
       <article className="insight-card">
-        <h2>Insights Econômicos</h2>
+        <h2>Desigualdade regional do trabalho</h2>
         <p>
           Na referência mais recente ({analysis.latestDate.slice(0, 7) || "n/d"}), a média entre UFs para {variableConfig.description}
           ficou em <strong>{formatValue(analysis.average, variableConfig.unit)}</strong>. A maior leitura foi observada em

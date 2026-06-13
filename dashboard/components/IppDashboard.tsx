@@ -283,7 +283,7 @@ export function IppDashboard({ rows, cnaeRows = [] }: { rows: Row[]; cnaeRows?: 
           tall
         />
         <article className="insight-card ipp-insight-card">
-          <h2>Insights Econômicos</h2>
+          <h2>Custos industriais e repasse</h2>
           <p>{insightText}</p>
           <div className="highlight-boxes">
             <div>

@@ -17,7 +17,12 @@ export default function Atividade() {
 
   return (
     <AppShell active="/atividade">
-      <DashboardHeader eyebrow="Producao e crescimento" title="Atividade economica" description="Acompanhe o ritmo da economia brasileira e seus principais setores." reference={last ? month(last.date) : "n/d"} />
+      <DashboardHeader
+        eyebrow="Producao e crescimento"
+        title="Atividade economica"
+        description="A atividade combina sustentacao de renda e servicos com freios vindos de juros altos, credito caro e desempenho heterogeneo entre setores e regioes."
+        reference={last ? month(last.date) : "n/d"}
+      />
       <div className="content">
         <DataDownloadButton
           title="Atividade economica"
@@ -34,7 +39,7 @@ export default function Atividade() {
             return <KpiCard key={key} label={sectorLabels[index]} value={`${number(item?.value ?? 0, 1)}%`} reference={item ? month(item.date) : ""} source="IBGE (2026)" />;
           })}
         </div>
-        <SeriesChart rows={sgs} series={{ ibc_br: "IBC-Br", ibc_br_dessaz: "IBC-Br dessazonalizado" }} title="Indice de atividade economica" subtitle="Indice mensal do Banco Central" source="BCB (2026)" />
+        <SeriesChart rows={sgs} series={{ ibc_br: "IBC-Br", ibc_br_dessaz: "IBC-Br dessazonalizado" }} title="Indice de atividade economica" subtitle="Indice mensal do Banco Central, usado para captar o pulso de curto prazo da economia" source="BCB (2026)" />
         <SeriesChart
           rows={pibComponents}
           series={{
@@ -48,13 +53,13 @@ export default function Atividade() {
           }}
           defaultSelected={["pib_precos_mercado", "consumo_familias", "despesa_governo"]}
           title="PIB e componentes"
-          subtitle="Variacao trimestral por componente selecionado"
+          subtitle="Acumulado em quatro trimestres por componente selecionado"
           suffix="%"
           source="IBGE (2026)"
           insightPosition="left"
         />
         <UfRadarChart rows={ibcUf} />
-        <SeriesChart rows={sectors} series={{ pim_12m: "Industria", pmc_12m: "Comercio", pms_12m: "Servicos" }} title="Atividade por setor" subtitle="Variacao acumulada em 12 meses" suffix="%" source="IBGE (2026)" insightPosition="left" />
+        <SeriesChart rows={sectors} series={{ pim_12m: "Industria", pmc_12m: "Comercio", pms_12m: "Servicos" }} title="Atividade por setor" subtitle="Variacao acumulada em 12 meses para avaliar a difusao do crescimento" suffix="%" source="IBGE (2026)" insightPosition="left" />
       </div>
     </AppShell>
   );

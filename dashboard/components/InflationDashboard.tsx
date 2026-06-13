@@ -226,16 +226,17 @@ export function InflationDashboard({ ipcaRows, groupRows }: { ipcaRows: Row[]; g
 
   const inflationInsight = (
     <article className="insight-card chart-side-insight">
-      <h2>Insights Econômicos</h2>
+      <h2>Inflação, renda e juros</h2>
       <p>
         Na referência mais recente, {highestInflation?.label ?? "n/d"} apresenta a maior leitura ({formatPct(highestInflation?.value ?? null)}),
         enquanto {lowestInflation?.label ?? "n/d"} registra a menor ({formatPct(lowestInflation?.value ?? null)}).
-        A comparação entre IPCA total, preços livres e administrados ajuda a identificar a origem da pressão inflacionária.
+        A comparação entre IPCA total, preços livres e administrados indica se a pressão vem de demanda corrente,
+        custos setoriais, tarifas ou itens regulados. Essa distinção é decisiva para avaliar renda real e persistência da política monetária.
       </p>
       <p>
         Quando os preços livres aceleram, o movimento costuma refletir demanda, alimentos, serviços e bens industriais. Quando os administrados
-        ganham peso, a pressão pode estar mais ligada a tarifas, combustíveis e itens regulados. Essa separação é central em relatórios de
-        conjuntura porque indica se a inflação exige atenção sobre demanda, custos, choques específicos ou difusão entre grupos.
+        ganham peso, a pressão pode estar mais ligada a tarifas, combustíveis e energia. Inflação disseminada reduz poder de compra,
+        dificulta a queda dos juros e tende a limitar consumo de bens e serviços mais sensíveis ao orçamento das famílias.
       </p>
     </article>
   );
