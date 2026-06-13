@@ -44,7 +44,7 @@ export default function Trabalho() {
         </div>
         <BrazilUnemploymentMap rows={socioUf.length ? socioUf : desempUf} geoJson={geoJson} />
         <SeriesChart rows={rows} series={{ taxa_desemprego: "Desemprego", taxa_ocupacao: "Ocupacao", informalidade: "Informalidade", desalentadas: "Desalentadas" }} title="Indicadores do mercado de trabalho" subtitle="Taxas trimestrais, em percentual" suffix="%" source={source} />
-        <SeriesChart rows={rows} series={{ renda_media: "Renda media" }} title="Rendimento medio real" subtitle="Valor em reais" source={source} />
+        <SeriesChart rows={rows} series={{ renda_media: "Renda media" }} title="Rendimento medio real" subtitle="Valor em reais" source={source} insightPosition="left" />
       </div>
     </AppShell>
   );

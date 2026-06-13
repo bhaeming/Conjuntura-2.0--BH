@@ -4,3 +4,4 @@ plotly>=5.18
 pyarrow>=14.0
 numpy>=1.26
 openpyxl>=3.1
+statsmodels>=0.14

@@ -10,6 +10,7 @@ import { lastValue, month, number } from "@/lib/format";
 export default function Atividade() {
   const sgs = loadData("sgs_dados");
   const sectors = loadData("indust_comer_serv");
+  const pibComponents = loadData("pib_componentes_quarterly");
   const ibcUf = loadData("ibc_uf");
   const last = lastValue(sgs, "ibc_br_dessaz");
   const sectorLabels = ["Industria 12m", "Comercio 12m", "Servicos 12m"];
@@ -23,6 +24,7 @@ export default function Atividade() {
           datasets={[
             { name: "sgs_dados", source: "BCB (2026)" },
             { name: "indust_comer_serv", source: "IBGE (2026)" },
+            { name: "pib_componentes_quarterly", source: "IBGE (2026)" },
             { name: "ibc_uf", source: "BCB (2026)" },
           ]}
         />
@@ -33,8 +35,26 @@ export default function Atividade() {
           })}
         </div>
         <SeriesChart rows={sgs} series={{ ibc_br: "IBC-Br", ibc_br_dessaz: "IBC-Br dessazonalizado" }} title="Indice de atividade economica" subtitle="Indice mensal do Banco Central" source="BCB (2026)" />
+        <SeriesChart
+          rows={pibComponents}
+          series={{
+            pib_precos_mercado: "PIB",
+            consumo_familias: "Consumo das familias",
+            despesa_governo: "Despesa do governo",
+            fbcf: "FBCF",
+            agropecuaria: "Agropecuaria",
+            industria: "Industria",
+            servicos: "Servicos",
+          }}
+          defaultSelected={["pib_precos_mercado", "consumo_familias", "despesa_governo"]}
+          title="PIB e componentes"
+          subtitle="Variacao trimestral por componente selecionado"
+          suffix="%"
+          source="IBGE (2026)"
+          insightPosition="left"
+        />
         <UfRadarChart rows={ibcUf} />
-        <SeriesChart rows={sectors} series={{ pim_12m: "Industria", pmc_12m: "Comercio", pms_12m: "Servicos" }} title="Atividade por setor" subtitle="Variacao acumulada em 12 meses" suffix="%" source="IBGE (2026)" />
+        <SeriesChart rows={sectors} series={{ pim_12m: "Industria", pmc_12m: "Comercio", pms_12m: "Servicos" }} title="Atividade por setor" subtitle="Variacao acumulada em 12 meses" suffix="%" source="IBGE (2026)" insightPosition="left" />
       </div>
     </AppShell>
   );

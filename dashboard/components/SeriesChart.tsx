@@ -25,6 +25,8 @@ export function SeriesChart({
   stacked = false,
   suffix = "",
   source,
+  defaultSelected,
+  insightPosition = "right",
 }: {
   rows: Row[];
   series: Record<string, string>;
@@ -34,9 +36,11 @@ export function SeriesChart({
   stacked?: boolean;
   suffix?: string;
   source?: string;
+  defaultSelected?: string[];
+  insightPosition?: "left" | "right";
 }) {
   const keys = Object.keys(series);
-  const [selected, setSelected] = useState(keys);
+  const [selected, setSelected] = useState(defaultSelected?.length ? defaultSelected : keys);
   const [years, setYears] = useState("10");
 
   const visible = useMemo(() => {
@@ -137,7 +141,7 @@ export function SeriesChart({
           <option value="5">5 anos</option><option value="10">10 anos</option><option value="15">15 anos</option><option value="all">Todo período</option>
         </select>
       </div>
-      <ChartCard title={title} subtitle={subtitle} option={option} tall source={source} insight={insight} />
+      <ChartCard title={title} subtitle={subtitle} option={option} tall source={source} insight={insight} insightPosition={insightPosition} />
     </div>
   );
 }

@@ -37,7 +37,7 @@ export default function JurosCredito() {
           <KpiCard label="Inadimplencia total" value={`${number(inad?.value ?? 0, 2)}%`} reference={inad ? month(inad.date) : ""} source={source} />
         </div>
         <SeriesChart rows={selicRows} series={{ selic: "Selic" }} title="Taxa basica de juros" subtitle="Meta Selic, em % ao ano" suffix="%" source={source} />
-        <SeriesChart rows={sgs} series={{ credito_pf: "Pessoa fisica", credito_pj: "Pessoa juridica", credito_total: "Total" }} title="Estoque de credito" subtitle="Saldo em milhoes de reais" source={source} />
+        <SeriesChart rows={sgs} series={{ credito_pf: "Pessoa fisica", credito_pj: "Pessoa juridica", credito_total: "Total" }} title="Estoque de credito" subtitle="Saldo em milhoes de reais" source={source} insightPosition="left" />
         <CreditConditionsPanel rows={creditoCondicoes} source={source} />
       </div>
     </AppShell>

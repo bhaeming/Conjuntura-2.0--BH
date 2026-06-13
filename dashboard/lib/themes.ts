@@ -1,4 +1,4 @@
-import { Activity, BadgeDollarSign, Landmark, Users } from "lucide-react";
+import { Activity, BadgeDollarSign, Landmark, TrendingUp, Users } from "lucide-react";
 
 export const themes = [
   {
@@ -40,5 +40,15 @@ export const themes = [
     color: "#2b8a3e",
     tint: "#edf8ee",
     source: "IBGE (2026)",
+  },
+  {
+    href: "/projecoes",
+    title: "Cenários e projeções",
+    eyebrow: "Trajetórias prospectivas",
+    description: "Consumo das famílias e metodologia expansível para o PIB.",
+    icon: TrendingUp,
+    color: "#0b7285",
+    tint: "#e6f6f8",
+    source: "IBGE/BCB (2026)",
   },
 ];

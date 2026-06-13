@@ -13,6 +13,7 @@ export function ChartCard({
   tall = false,
   source,
   insight,
+  insightPosition = "right",
 }: {
   title: string;
   subtitle: string;
@@ -20,6 +21,7 @@ export function ChartCard({
   tall?: boolean;
   source?: string;
   insight?: ReactNode;
+  insightPosition?: "left" | "right";
 }) {
   const chart = (
     <section className="chart-card">
@@ -32,7 +34,7 @@ export function ChartCard({
   );
 
   if (insight) {
-    return <section className="chart-with-insight">{chart}{insight}</section>;
+    return <section className={`chart-with-insight ${insightPosition === "left" ? "insight-left" : ""}`}>{chart}{insight}</section>;
   }
 
   return chart;

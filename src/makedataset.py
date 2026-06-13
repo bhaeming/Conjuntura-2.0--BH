@@ -21,6 +21,17 @@ BASE_DIR = Path(__file__).resolve().parents[1]
 
 def make_sgs():
     ###################################################################
+
+    def get_sgs_series(series_map: dict[str, str], start: str) -> pd.DataFrame:
+        frames = []
+        for name, code in series_map.items():
+            try:
+                frames.append(sgs.get({name: code}, start=start))
+            except Exception as exc:
+                print(f"Aviso: falha ao baixar SGS {code} ({name}): {exc}")
+        if not frames:
+            return pd.DataFrame()
+        return reduce(lambda left, right: left.join(right, how="outer"), frames)
     ### Dados SGS ###
     ###################################################################
 
@@ -46,10 +57,9 @@ def make_sgs():
     # -----------------------------
     # Coleta dados IPCA do SGS
     # -----------------------------
-    ipca_mensal = sgs.get({"ipca": "433"}, start="2014-01-31")
-    ipca_12m    = sgs.get({"ipca_12m": "13522"}, start="2014-01-31")
-
-    ipca_ld_m = sgs.get(
+    ipca_mensal = get_sgs_series({"ipca": "433"}, start="2014-01-31")
+    ipca_12m = get_sgs_series({"ipca_12m": "13522"}, start="2014-01-31")
+    ipca_ld_m = get_sgs_series(
         {"ipca_livres": "11428", "ipca_administrados": "4449"},
         start="2011-01-31",
     )
@@ -100,13 +110,14 @@ def make_sgs():
     # Coleta dados IBC-Br e crédito do SGS
     # ----------------------------
     ##Brasil 
-    ibc_br= sgs.get({'ibc_br' : '24363',
-                    'ibc_br_dessaz': '24364'},
-                start = '2014-03-31')
+    ibc_br = get_sgs_series(
+        {'ibc_br' : '24363', 'ibc_br_dessaz': '24364'},
+        start='2014-03-31'
+    )
     ibc_br
 
     ##ufs 
-    ibc_uf = sgs.get(
+    ibc_uf = get_sgs_series(
         {
             "ibc_se": "25393",        
             "ibc_se_dessaz": "25395",
@@ -150,7 +161,7 @@ def make_sgs():
     ibc_uf
     ibc_uf.columns
 
-    saldo_cred = sgs.get(
+    saldo_cred = get_sgs_series(
         {
             'credito_pf': '20570',
             'credito_pj': '20543',
@@ -162,7 +173,7 @@ def make_sgs():
 
     # inadimplencia da carteira de credito com recursos livres (%)
     # SGS 21085: Total | 21086: Pessoas juridicas | 21112: Pessoas fisicas
-    inadimplencia =  sgs.get(
+    inadimplencia = get_sgs_series(
         {
             'inadimplencia_total' : '21085',
             'inadimplencia_pj' : '21086',
@@ -175,7 +186,7 @@ def make_sgs():
 
     # taxa media de juros das operacoes de credito com recursos livres (% a.a.)
     # SGS 20717: Total | 20718: Pessoas juridicas | 20740: Pessoas fisicas
-    taxa_de_juros = sgs.get(
+    taxa_de_juros = get_sgs_series(
         {
             'taxa_juros_pf' : '20740',
             'taxa_juros_pj' : '20718',
@@ -206,6 +217,18 @@ def make_sgs():
     sgs_wide.dropna(inplace=True)
     sgs_wide.head()
     sgs_wide.tail()
+
+    expected_sgs_columns = [
+        "taxa_juros_total",
+        "taxa_juros_pf",
+        "taxa_juros_pj",
+        "inadimplencia_total",
+        "inadimplencia_pf",
+        "inadimplencia_pj",
+    ]
+    for column in expected_sgs_columns:
+        if column not in sgs_wide.columns:
+            sgs_wide[column] = np.nan
 
     BASE_DIR = Path(__file__).resolve().parents[1]  # raiz do projeto
     out_dir = BASE_DIR / "data" / "processed"
@@ -291,6 +314,25 @@ out_dir = BASE_DIR / "data" / "processed"
 out_dir.mkdir(parents=True, exist_ok=True)
 
 pib_long.to_parquet(out_dir / "pibs_quarterly.parquet", index=False)
+
+pib_component_labels = {
+    "PIB a preços de mercado": "pib_precos_mercado",
+    "Agropecuária - total": "agropecuaria",
+    "Indústria - total": "industria",
+    "Serviços - total": "servicos",
+    "Despesa de consumo das famílias": "consumo_familias",
+    "Despesa de consumo da administração pública": "despesa_governo",
+    "Formação bruta de capital fixo": "fbcf",
+}
+
+pib_componentes_wide = (
+    pib_long[pib_long["setor"].isin(pib_component_labels)]
+    .assign(indicador=lambda df: df["setor"].map(pib_component_labels))
+    .pivot_table(index="date", columns="indicador", values="value", aggfunc="mean")
+    .reset_index()
+    .sort_values("date")
+)
+pib_componentes_wide.to_parquet(out_dir / "pib_componentes_quarterly.parquet", index=False)
 
 
 # ------------------------------------
