@@ -98,3 +98,9 @@
  ✓ Compiled in 1308ms (1827 modules)
  ✓ Compiled in 355ms (1836 modules)
  GET /trabalho 200 in 112ms
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 14.2s (2169 modules)
+ GET / 500 in 18632ms
+ GET / 200 in 868ms
+ GET / 200 in 900ms
+ GET / 200 in 506ms
