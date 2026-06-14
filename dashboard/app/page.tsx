@@ -1,5 +1,4 @@
 import { AppShell } from "@/components/AppShell";
-import { DataDownloadButton } from "@/components/DataDownloadButton";
 import { KpiCard } from "@/components/KpiCard";
 import { ThemeCard } from "@/components/ThemeCard";
 import { loadData } from "@/lib/data";
@@ -20,7 +19,7 @@ export default function Home() {
     <AppShell>
       <div className="home-hero">
         <div>
-          <span className="eyebrow">PAINEL DE CONJUNTURA 2.0</span>
+          <span className="eyebrow">Ciclo econ&ocirc;mico do Brasil</span>
           <h1>Economia brasileira,<br /><em>em perspectiva.</em></h1>
           <p>Indicadores oficiais organizados para interpretar o ciclo econ&ocirc;mico brasileiro: atividade, pre&ccedil;os, juros, cr&eacute;dito, trabalho e cen&aacute;rios prospectivos.</p>
         </div>
@@ -59,15 +58,6 @@ export default function Home() {
             juros est&aacute;veis em patamar elevado seguem restringindo consumo e investimento, e mercado de trabalho resiliente pode amortecer parte desses efeitos.
           </p>
         </article>
-        <DataDownloadButton
-          title="Resumo executivo"
-          datasets={[
-            { name: "ipca_all", source: "IBGE/BCB (2026)" },
-            { name: "selic_mensal", source: "BCB (2026)" },
-            { name: "socioeconomico_quarterly", source: "IBGE (2026)" },
-            { name: "sgs_dados", source: "BCB (2026)" },
-          ]}
-        />
         <div className="kpi-grid">
           <KpiCard label="IPCA 12 meses" value={`${number(ipca?.value ?? 0, 2)}%`} reference={ipca ? month(ipca.date) : ""} source="IBGE/BCB (2026)" />
           <KpiCard label="Selic" value={`${number(selic?.value ?? 0, 2)}%`} reference={selic ? month(selic.date) : ""} source="BCB (2026)" />

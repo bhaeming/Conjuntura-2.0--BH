@@ -48,3 +48,43 @@
  GET /trabalho 200 in 9051ms
  GET /atividade 200 in 180ms
  GET / 200 in 150ms
+ GET /atividade 200 in 1202ms
+ GET / 200 in 307ms
+ GET /trabalho 200 in 17094ms
+ GET /trabalho 200 in 8734ms
+ GET /atividade 200 in 497ms
+ GET / 200 in 123ms
+ GET /atividade 200 in 123ms
+ GET / 200 in 112ms
+ GET /atividade 200 in 114ms
+ ✓ Compiled in 3s (1820 modules)
+ GET /atividade 200 in 346ms
+ GET /?reload=1790901754 200 in 247ms
+ ○ Compiling /precos ...
+ ✓ Compiled /precos in 900ms (1007 modules)
+ GET /atividade 200 in 363ms
+ GET /precos?reload=557986162 200 in 1448ms
+ GET /projecoes 200 in 134ms
+ ✓ Compiled in 893ms (1820 modules)
+ ✓ Compiled in 367ms (1834 modules)
+ GET /projecoes 200 in 117ms
+ ✓ Compiled /precos in 183ms (1007 modules)
+ GET /projecoes 200 in 66ms
+ GET /precos?reload=1599556453 200 in 773ms
+ GET / 200 in 152ms
+ GET /precos 200 in 145ms
+ GET /projecoes 200 in 87ms
+ GET / 200 in 100ms
+ GET /atividade 200 in 138ms
+ GET /trabalho 200 in 20678ms
+ GET /atividade 200 in 159ms
+ ✓ Compiled in 1557ms (1822 modules)
+ GET /projecoes 200 in 454ms
+ ✓ Compiled in 1441ms (1001 modules)
+ GET /projecoes 200 in 269ms
+ ✓ Compiled in 1202ms (1836 modules)
+ GET /projecoes 200 in 170ms
+ GET /atividade 200 in 182ms
+ GET /precos 200 in 316ms
+ GET /projecoes 200 in 141ms
+ GET /trabalho 200 in 9910ms

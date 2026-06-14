@@ -153,7 +153,7 @@ export function SeriesChart({
           : "Leitura econômica";
 
   const firstInsight = isPib
-    ? `A leitura dos componentes mostra onde a demanda agregada ganha ou perde tração. Entre as séries selecionadas, ${highlights.highest?.label ?? "n/d"} apresenta a maior leitura recente (${formatValue(highlights.highest?.value ?? null, suffix)}), sinalizando o vetor que mais sustenta o crescimento no recorte atual. Quando consumo, governo e investimento caminham em direções diferentes, o PIB pode crescer com composição menos robusta, dependente de poucos motores.`
+    ? `Entre as séries analisadas, ${highlights.highest?.label ?? "n/d"} apresenta a maior leitura recente (${formatValue(highlights.highest?.value ?? null, suffix)}), sinalizando o vetor que mais sustenta o crescimento no recorte atual. Quando consumo, governo e investimento caminham em direções diferentes, o PIB pode crescer com composição menos robusta, dependente de poucos motores.`
     : isActivity
       ? `O indicador de atividade deve ser lido como termômetro de curto prazo do ciclo. A maior leitura recente entre as séries selecionadas é ${highlights.highest?.label ?? "n/d"} (${formatValue(highlights.highest?.value ?? null, suffix)}), o que ajuda a distinguir nível de atividade e momentum. Em ambiente de juros altos, avanços persistentes no IBC-Br tendem a depender de renda, serviços e setores menos sensíveis ao crédito.`
       : isSector

@@ -6,8 +6,9 @@ type Theme = (typeof themes)[number];
 
 export function ThemeCard({ theme }: { theme: Theme }) {
   const Icon = theme.icon;
+  const cardClassName = theme.href === "/projecoes" ? "theme-card projections-theme-card" : "theme-card";
   return (
-    <Link href={theme.href} className="theme-card" style={{ "--accent": theme.color, "--tint": theme.tint } as React.CSSProperties}>
+    <Link href={theme.href} className={cardClassName} style={{ "--accent": theme.color, "--tint": theme.tint } as React.CSSProperties}>
       <div className="theme-card-top">
         <span className="theme-icon"><Icon size={23} /></span>
         <ArrowUpRight className="theme-arrow" size={20} />

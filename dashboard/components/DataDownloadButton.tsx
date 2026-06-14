@@ -99,7 +99,7 @@ export function DataDownloadButton({ title, datasets }: { title: string; dataset
   return (
     <>
       <div className="page-data-actions">
-        <button onClick={openModal}>Ver dados da página</button>
+        <button onClick={openModal}>Acesse os dados da página</button>
       </div>
       {open && (
         <div className="modal-backdrop" role="presentation" onClick={() => setOpen(false)}>
