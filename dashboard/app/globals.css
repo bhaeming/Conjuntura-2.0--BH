@@ -134,3 +134,4 @@ tbody tr:hover{background:#f8fbfa}
 .open-label{position:relative;bottom:auto;display:block;margin-top:0;z-index:1}
 .projections-theme-card .open-label{align-self:flex-start;border:1px solid #063f35;border-radius:999px;background:#063f35;color:#fff;padding:8px 13px;box-shadow:0 8px 18px #063f3524;transition:background .18s ease,border-color .18s ease,box-shadow .18s ease,transform .18s ease}
 .projections-theme-card:hover .open-label{background:#00a878;border-color:#00a878;box-shadow:0 12px 24px #00a8783a;transform:translateY(-1px)}
+.map-loading{height:520px;display:grid;place-items:center;color:#526772;font-size:13px;font-weight:700;background:#f8fafb;border-radius:10px}

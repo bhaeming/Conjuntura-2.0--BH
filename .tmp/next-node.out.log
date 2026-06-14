@@ -88,3 +88,13 @@
  GET /precos 200 in 316ms
  GET /projecoes 200 in 141ms
  GET /trabalho 200 in 9910ms
+ ✓ Compiled in 4.8s (1001 modules)
+ GET /trabalho 200 in 471ms
+ ✓ Compiled in 4.8s (1822 modules)
+ ○ Compiling /_not-found ...
+ GET /trabalho 200 in 3007ms
+ ✓ Compiled /_not-found in 5s (1827 modules)
+ GET /geo/BR_UF_2023_simplified.geojson 404 in 130ms
+ ✓ Compiled in 1308ms (1827 modules)
+ ✓ Compiled in 355ms (1836 modules)
+ GET /trabalho 200 in 112ms

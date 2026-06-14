@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { EChartsOption } from "echarts";
 import * as echarts from "echarts";
 import type { Row } from "@/lib/data";
@@ -27,9 +27,25 @@ function numeric(value: Row[string] | undefined) {
   return typeof value === "number" && Number.isFinite(value) ? value : null;
 }
 
-export function BrazilUnemploymentMap({ rows, geoJson }: { rows: Row[]; geoJson: unknown }) {
+export function BrazilUnemploymentMap({ rows }: { rows: Row[] }) {
   const [variable, setVariable] = useState<VariableKey>("taxa_desemprego");
+  const [geoJson, setGeoJson] = useState<Parameters<typeof echarts.registerMap>[1] | null>(null);
   const variableConfig = variables[variable];
+
+  useEffect(() => {
+    let isMounted = true;
+    fetch("/geo/BR_UF_2023_simplified.geojson")
+      .then((response) => response.json())
+      .then((data) => {
+        if (isMounted) setGeoJson(data);
+      })
+      .catch(() => {
+        if (isMounted) setGeoJson(null);
+      });
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   const analysis = useMemo(() => {
     const sorted = [...rows].sort((a, b) => String(a.date).localeCompare(String(b.date)));
@@ -50,7 +66,9 @@ export function BrazilUnemploymentMap({ rows, geoJson }: { rows: Row[]; geoJson:
     return { latestDate, values, average, highest, lowest, rising, falling };
   }, [rows, variable]);
 
-  echarts.registerMap("BR_UF", geoJson as Parameters<typeof echarts.registerMap>[1]);
+  if (geoJson) {
+    echarts.registerMap("BR_UF", geoJson);
+  }
 
   const min = Math.min(...analysis.values.map((row) => row.value));
   const max = Math.max(...analysis.values.map((row) => row.value));
@@ -107,7 +125,11 @@ export function BrazilUnemploymentMap({ rows, geoJson }: { rows: Row[]; geoJson:
             </select>
           </label>
         </div>
-        <ReactECharts option={option} style={{ height: 520 }} notMerge lazyUpdate />
+        {geoJson ? (
+          <ReactECharts option={option} style={{ height: 520 }} notMerge lazyUpdate />
+        ) : (
+          <div className="map-loading">Carregando mapa...</div>
+        )}
       </article>
       <article className="insight-card">
         <h2>Desigualdade regional do trabalho</h2>
