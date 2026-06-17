@@ -1,11 +1,11 @@
 import { AppShell } from "@/components/AppShell";
 import { DataDownloadButton } from "@/components/DataDownloadButton";
 import { DashboardHeader } from "@/components/DashboardHeader";
-import { KpiCard } from "@/components/KpiCard";
+import { IbcActivityPanel } from "@/components/IbcActivityPanel";
 import { SeriesChart } from "@/components/SeriesChart";
 import { UfRadarChart } from "@/components/UfRadarChart";
 import { loadData } from "@/lib/data";
-import { lastValue, month, number } from "@/lib/format";
+import { lastValue, month } from "@/lib/format";
 
 export default function Atividade() {
   const sgs = loadData("sgs_dados");
@@ -13,7 +13,6 @@ export default function Atividade() {
   const pibComponents = loadData("pib_componentes_quarterly");
   const ibcUf = loadData("ibc_uf");
   const last = lastValue(sgs, "ibc_br_dessaz");
-  const sectorLabels = ["Industria 12m", "Comercio 12m", "Servicos 12m"];
 
   return (
     <AppShell active="/atividade">
@@ -33,13 +32,7 @@ export default function Atividade() {
             { name: "ibc_uf", source: "BCB (2026)" },
           ]}
         />
-        <div className="kpi-grid three">
-          {["pim_12m", "pmc_12m", "pms_12m"].map((key, index) => {
-            const item = lastValue(sectors, key);
-            return <KpiCard key={key} label={sectorLabels[index]} value={`${number(item?.value ?? 0, 1)}%`} reference={item ? month(item.date) : ""} source="IBGE (2026)" />;
-          })}
-        </div>
-        <SeriesChart rows={sgs} series={{ ibc_br: "IBC-Br", ibc_br_dessaz: "IBC-Br dessazonalizado" }} title="Indice de atividade economica" subtitle="Indice mensal do Banco Central, usado para captar o pulso de curto prazo da economia" source="BCB (2026)" />
+        <IbcActivityPanel nationalRows={sgs} regionalRows={ibcUf} />
         <SeriesChart
           rows={pibComponents}
           series={{

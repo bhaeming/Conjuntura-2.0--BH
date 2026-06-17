@@ -6,33 +6,44 @@ import type { Row } from "@/lib/data";
 import { ChartCard } from "./ChartCard";
 
 const ufSeries: Record<string, string> = {
-  ibc_am_dessaz: "AM",
-  ibc_pa_dessaz: "PA",
-  ibc_ce_dessaz: "CE",
-  ibc_pe_dessaz: "PE",
-  ibc_ba_dessaz: "BA",
-  ibc_es_dessaz: "ES",
-  ibc_mg_dessaz: "MG",
-  ibc_rj_dessaz: "RJ",
-  ibc_sp_dessaz: "SP",
-  ibc_pr_dessaz: "PR",
-  ibc_sc_dessaz: "SC",
-  ibc_rs_dessaz: "RS",
-  ibc_go_dessaz: "GO",
+  ibc_am: "AM",
+  ibc_pa: "PA",
+  ibc_ce: "CE",
+  ibc_pe: "PE",
+  ibc_ba: "BA",
+  ibc_es: "ES",
+  ibc_mg: "MG",
+  ibc_rj: "RJ",
+  ibc_sp: "SP",
+  ibc_pr: "PR",
+  ibc_sc: "SC",
+  ibc_rs: "RS",
+  ibc_go: "GO",
 };
 
-function numeric(value: Row[string]) {
+function numeric(value: Row[string] | undefined) {
   return typeof value === "number" && Number.isFinite(value) ? value : null;
 }
 
 function pctChange(current: number | null, base: number | null) {
   if (current == null || base == null || base === 0) return null;
-  return ((current / base) - 1) * 100;
+  return (current / base - 1) * 100;
+}
+
+function average(items: Array<number | null>) {
+  const valid = items.filter((item): item is number => item != null);
+  if (!valid.length) return null;
+  return valid.reduce((sum, item) => sum + item, 0) / valid.length;
 }
 
 function formatPct(value: number | null) {
   if (value == null || Number.isNaN(value)) return "n/d";
   return `${value.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}%`;
+}
+
+function formatMonth(date: string | null) {
+  if (!date) return "n/d";
+  return new Intl.DateTimeFormat("pt-BR", { month: "short", year: "numeric", timeZone: "UTC" }).format(new Date(date));
 }
 
 export function UfRadarChart({ rows }: { rows: Row[] }) {
@@ -41,18 +52,24 @@ export function UfRadarChart({ rows }: { rows: Row[] }) {
 
     return Object.entries(ufSeries)
       .map(([key, label]) => {
+        const saKey = `${key}_dessaz`;
         const validRows = sorted.filter((row) => numeric(row[key]) != null);
+        const validSaRows = sorted.filter((row) => numeric(row[saKey]) != null);
         const lastIndex = validRows.length - 1;
+        const lastSaIndex = validSaRows.length - 1;
         const current = lastIndex >= 0 ? numeric(validRows[lastIndex][key]) : null;
-        const monthBase = lastIndex >= 1 ? numeric(validRows[lastIndex - 1][key]) : null;
+        const currentSa = lastSaIndex >= 0 ? numeric(validSaRows[lastSaIndex][saKey]) : null;
+        const monthBase = lastSaIndex >= 1 ? numeric(validSaRows[lastSaIndex - 1][saKey]) : null;
         const threeBase = lastIndex >= 3 ? numeric(validRows[lastIndex - 3][key]) : null;
-        const twelveBase = lastIndex >= 12 ? numeric(validRows[lastIndex - 12][key]) : null;
+        const currentWindow = validRows.slice(lastIndex - 11, lastIndex + 1).map((row) => numeric(row[key]));
+        const previousWindow = validRows.slice(lastIndex - 23, lastIndex - 11).map((row) => numeric(row[key]));
 
         return {
           label,
-          mes: pctChange(current, monthBase),
+          date: String(validRows[lastIndex]?.date ?? ""),
+          mes: pctChange(currentSa, monthBase),
           tresMeses: pctChange(current, threeBase),
-          dozeMeses: pctChange(current, twelveBase),
+          dozeMeses: pctChange(average(currentWindow), average(previousWindow)),
         };
       })
       .filter((item) => item.dozeMeses != null)
@@ -60,27 +77,26 @@ export function UfRadarChart({ rows }: { rows: Row[] }) {
   }, [rows]);
 
   const radarData = tableData
-    .filter((item): item is { label: string; mes: number | null; tresMeses: number | null; dozeMeses: number } => item.dozeMeses != null)
+    .filter((item): item is { label: string; date: string; mes: number | null; tresMeses: number | null; dozeMeses: number } => item.dozeMeses != null)
     .map((item) => ({ label: item.label, growth: item.dozeMeses }));
 
   const maxAbs = Math.max(5, ...radarData.map((item) => Math.abs(item.growth)));
   const axisLimit = Math.ceil(maxAbs + 1);
   const highestUf = [...tableData].filter((row) => row.dozeMeses != null).sort((a, b) => (b.dozeMeses ?? -Infinity) - (a.dozeMeses ?? -Infinity))[0];
   const lowestUf = [...tableData].filter((row) => row.dozeMeses != null).sort((a, b) => (a.dozeMeses ?? Infinity) - (b.dozeMeses ?? Infinity))[0];
-  const average = radarData.length ? radarData.reduce((sum, row) => sum + row.growth, 0) / radarData.length : null;
+  const averageGrowth = radarData.length ? radarData.reduce((sum, row) => sum + row.growth, 0) / radarData.length : null;
+  const latestDate = tableData[0]?.date ?? null;
 
   const radarInsight = (
     <article className="insight-card chart-side-insight">
-      <h2>Difusão regional da atividade</h2>
+      <h2>Difusao regional da atividade</h2>
       <p>
-        O radar compara o crescimento regional do IBC nas UFs acompanhadas. O maior avanço em 12 meses aparece em
-        <strong> {highestUf?.label ?? "n/d"}</strong> ({formatPct(highestUf?.dozeMeses ?? null)}), enquanto a menor leitura está em
-        <strong> {lowestUf?.label ?? "n/d"}</strong> ({formatPct(lowestUf?.dozeMeses ?? null)}). A média do grupo está em {formatPct(average)}.
+        O radar compara o crescimento regional do IBC nas UFs acompanhadas pela serie original acumulada em 12 meses, na ultima observacao disponivel ({formatMonth(latestDate)}). O maior avanco aparece em
+        <strong> {highestUf?.label ?? "n/d"}</strong> ({formatPct(highestUf?.dozeMeses ?? null)}), enquanto a menor leitura esta em
+        <strong> {lowestUf?.label ?? "n/d"}</strong> ({formatPct(lowestUf?.dozeMeses ?? null)}). A media do grupo esta em {formatPct(averageGrowth)}.
       </p>
       <p>
-        Em uma análise de conjuntura, dispersão regional elevada indica que o ciclo econômico não está homogêneo. Isso pode refletir
-        diferenças de composição produtiva, exposição a commodities, comércio, serviços, indústria e condições locais de renda e crédito.
-        Por isso, o radar complementa o IBC-Br nacional: ele mostra onde a atividade ganha tração e onde ainda há fragilidade relativa.
+        Em uma analise de conjuntura, a dispersao regional mostra onde a atividade tem tracao e onde ainda ha fragilidade relativa. A variacao mensal dessazonalizada fica restrita a tabela como sinal de margem; o radar privilegia a tendencia regional em 12 meses.
       </p>
     </article>
   );
@@ -117,7 +133,7 @@ export function UfRadarChart({ rows }: { rows: Row[] }) {
     <section className="chart-table-grid">
       <ChartCard
         title="Crescimento regional do IBC"
-        subtitle="Variação das UFs nos últimos 12 meses, série dessazonalizada"
+        subtitle={`Variacao acumulada em 12 meses da serie original, ultima observacao: ${formatMonth(latestDate)}`}
         option={option}
         source="BCB (2026)"
         insight={radarInsight}
@@ -127,12 +143,12 @@ export function UfRadarChart({ rows }: { rows: Row[] }) {
         <div className="table-card-header">
           <div>
             <h2>IBC por UF</h2>
-            <p>Variação da série dessazonalizada.</p>
+            <p>12 meses e 3 meses usam a serie original; mes usa a serie dessazonalizada.</p>
           </div>
         </div>
         <div className="table-scroll">
           <table>
-            <thead><tr><th>UF</th><th>Mês</th><th>3 meses</th><th>12 meses</th></tr></thead>
+            <thead><tr><th>UF</th><th>Mes dessaz.</th><th>3 meses</th><th>12 meses</th></tr></thead>
             <tbody>
               {[...tableData].sort((a, b) => (b.dozeMeses ?? -999) - (a.dozeMeses ?? -999)).map((row) => (
                 <tr key={row.label}>

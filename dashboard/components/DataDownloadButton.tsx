@@ -57,9 +57,16 @@ function toLongRows(datasets: Dataset[]) {
   }));
 }
 
+function formatCsvCell(value: LongRow[keyof LongRow]) {
+  if (typeof value === "number" && Number.isFinite(value)) {
+    return String(value).replace(".", ",");
+  }
+  return String(value ?? "");
+}
+
 function buildCsv(rows: LongRow[]) {
   const headers = ["dataset", "date", "variable", "value", "dimensions", "source"];
-  return [headers, ...rows.map((row) => headers.map((key) => String(row[key as keyof LongRow] ?? "")))]
+  return [headers, ...rows.map((row) => headers.map((key) => formatCsvCell(row[key as keyof LongRow])))]
     .map((line) => line.map((cell) => `"${cell.replace(/"/g, '""')}"`).join(";"))
     .join("\n");
 }

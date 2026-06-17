@@ -69,14 +69,21 @@ function metricsForCategory(sortedRows: Row[], categoryKey: string, category: st
   };
 }
 
+function formatCsvValue(value: Row[string] | string) {
+  if (typeof value === "number" && Number.isFinite(value)) {
+    return String(value).replace(".", ",");
+  }
+  return String(value ?? "");
+}
+
 function buildCsv(rows: Row[], categoryKey: string, label: string) {
   const headers = ["perspectiva", "categoria", "codigo_ipp", "date", "ipp_12m"];
   const body = rows.map((row) => [
     label,
-    String(row[categoryKey] ?? ""),
-    String(row.codigo_ipp ?? ""),
+    formatCsvValue(row[categoryKey]),
+    formatCsvValue(row.codigo_ipp),
     rowDate(row),
-    String(row.value ?? ""),
+    formatCsvValue(row.value),
   ]);
   return [headers, ...body]
     .map((line) => line.map((cell) => `"${String(cell).replace(/"/g, '""')}"`).join(";"))
