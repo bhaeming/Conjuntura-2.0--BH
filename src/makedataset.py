@@ -7,6 +7,9 @@ import statsmodels.api as sm
 import statsmodels.formula.api as smf
 from functools import reduce
 from pathlib import Path   
+import json
+from urllib.parse import urlencode
+from urllib.request import urlopen
 from building_features import tidy_sidra_monthly_single
 from building_features import ensure_month_end_index
 from building_features import acc_12m_curve_rate
@@ -22,13 +25,37 @@ BASE_DIR = Path(__file__).resolve().parents[1]
 def make_sgs():
     ###################################################################
 
+    def get_sgs_direct(name: str, code: str, start: str) -> pd.DataFrame:
+        """Fallback para a API oficial quando o cliente python-bcb falhar."""
+        start_date = pd.Timestamp(start)
+        params = urlencode(
+            {
+                "formato": "json",
+                "dataInicial": start_date.strftime("%d/%m/%Y"),
+                "dataFinal": pd.Timestamp.today().strftime("%d/%m/%Y"),
+            }
+        )
+        url = f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{code}/dados?{params}"
+        with urlopen(url, timeout=45) as response:
+            payload = json.load(response)
+        frame = pd.DataFrame(payload)
+        if frame.empty:
+            return pd.DataFrame(columns=[name], index=pd.DatetimeIndex([], name="Date"))
+        frame["Date"] = pd.to_datetime(frame["data"], format="%d/%m/%Y", errors="coerce")
+        frame[name] = pd.to_numeric(frame["valor"], errors="coerce")
+        return frame.dropna(subset=["Date"]).set_index("Date")[[name]].sort_index()
+
     def get_sgs_series(series_map: dict[str, str], start: str) -> pd.DataFrame:
         frames = []
         for name, code in series_map.items():
             try:
                 frames.append(sgs.get({name: code}, start=start))
             except Exception as exc:
-                print(f"Aviso: falha ao baixar SGS {code} ({name}): {exc}")
+                print(f"Aviso: cliente SGS falhou para {code} ({name}): {exc}. Tentando API direta.")
+                try:
+                    frames.append(get_sgs_direct(name, code, start))
+                except Exception as fallback_exc:
+                    print(f"Aviso: API direta também falhou para SGS {code} ({name}): {fallback_exc}")
         if not frames:
             return pd.DataFrame()
         return reduce(lambda left, right: left.join(right, how="outer"), frames)
@@ -441,7 +468,7 @@ ipp = sidra.get_table(
     territorial_level='1',
     ibge_territorial_code='1',
     variable='1394',
-    period='201501'+'-''202510',
+    period='all',
     classifications={
         '543': '33586,33583,33585,33584,33580,33579'
     },
@@ -451,6 +478,7 @@ ipp = sidra.get_table(
 ipp.head()
 # Tratamento IPP
 ipp_long = tidy_sidra_ipp(ipp)
+ipp_long = ipp_long[ipp_long["date"] >= pd.Timestamp("2015-01-01")].reset_index(drop=True)
 ipp_long
 
 #conferência

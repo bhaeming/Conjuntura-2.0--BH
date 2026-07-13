@@ -109,7 +109,7 @@ export function BrazilUnemploymentMap({ rows }: { rows: Row[] }) {
 
   return (
     <section className="map-insights-grid">
-      <article className="chart-card">
+      <article className="chart-card chart-card-responsive is-tall">
         <div className="chart-title">
           <div>
             <h2>{variableConfig.label} por UF</h2>
@@ -126,7 +126,7 @@ export function BrazilUnemploymentMap({ rows }: { rows: Row[] }) {
           </label>
         </div>
         {geoJson ? (
-          <ReactECharts option={option} style={{ height: 520 }} notMerge lazyUpdate />
+          <ReactECharts className="chart-canvas" option={option} style={{ height: "100%", minHeight: 460, flex: "1 1 auto" }} notMerge lazyUpdate />
         ) : (
           <div className="map-loading">Carregando mapa...</div>
         )}

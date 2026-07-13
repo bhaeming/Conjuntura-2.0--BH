@@ -24,12 +24,18 @@ export function ChartCard({
   insightPosition?: "left" | "right";
 }) {
   const chart = (
-    <section className="chart-card">
+    <section className={`chart-card chart-card-responsive ${tall ? "is-tall" : ""}`}>
       <div className="chart-title">
         <div><h2>{title}</h2><p>{subtitle}</p></div>
         {source && <span className="source-info" title={`Fonte: ${source}`} aria-label={`Fonte: ${source}`}>i</span>}
       </div>
-      <ReactECharts option={option} style={{ height: tall ? 440 : 350 }} notMerge lazyUpdate />
+      <ReactECharts
+        className="chart-canvas"
+        option={option}
+        style={{ height: "100%", minHeight: tall ? 420 : 340, flex: "1 1 auto" }}
+        notMerge
+        lazyUpdate
+      />
     </section>
   );
 

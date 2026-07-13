@@ -193,9 +193,9 @@ export function SeriesChart({
         </div>
       ) : (
         <div className="highlight-boxes">
-          <div><span>Maior leitura</span><strong>{highlights.highest?.label ?? "n/d"}</strong><small>{formatValue(highlights.highest?.value ?? null, suffix)}</small></div>
-          <div><span>Maior alta recente</span><strong>{highlights.fastest?.label ?? "n/d"}</strong><small>{formatValue(highlights.fastest?.change ?? null, suffix)}</small></div>
-          <div><span>Menor variação recente</span><strong>{highlights.weakest?.label ?? "n/d"}</strong><small>{formatValue(highlights.weakest?.change ?? null, suffix)}</small></div>
+          <div><span>Maior leitura</span><strong>{formatValue(highlights.highest?.value ?? null, suffix)}</strong><small title={highlights.highest?.label ?? "n/d"}>{highlights.highest?.label ?? "n/d"}</small></div>
+          <div><span>Maior alta recente</span><strong>{formatValue(highlights.fastest?.change ?? null, suffix)}</strong><small title={highlights.fastest?.label ?? "n/d"}>{highlights.fastest?.label ?? "n/d"}</small></div>
+          <div><span>Menor variação recente</span><strong>{formatValue(highlights.weakest?.change ?? null, suffix)}</strong><small title={highlights.weakest?.label ?? "n/d"}>{highlights.weakest?.label ?? "n/d"}</small></div>
         </div>
       )}
     </article>

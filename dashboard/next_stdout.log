@@ -1,29 +1,56 @@
 
 > painel-conjuntura-2@0.1.0 dev
-> next dev --hostname 127.0.0.1 --port 3000
+> next dev
 
    ▲ Next.js 15.5.19
-   - Local:        http://127.0.0.1:3000
-   - Network:      http://127.0.0.1:3000
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.100.145:3000
 
  ✓ Starting...
- ✓ Ready in 2.4s
+ ✓ Ready in 3.5s
  ○ Compiling / ...
- ✓ Compiled / in 9.6s (652 modules)
- GET / 200 in 10792ms
- GET / 200 in 213ms
- ○ Compiling /atividade ...
- ✓ Compiled /atividade in 7.8s (1786 modules)
- GET /atividade 200 in 8560ms
+ ✓ Compiled / in 9.5s (651 modules)
+ GET / 200 in 10455ms
+ GET / 200 in 472ms
  ○ Compiling /precos ...
- ✓ Compiled /precos in 1305ms (1797 modules)
- GET /precos 200 in 1652ms
+ ✓ Compiled /precos in 11.1s (1787 modules)
+ GET /precos 200 in 8851ms
+ GET /precos 200 in 887ms
  ○ Compiling /juros-credito ...
- ✓ Compiled /juros-credito in 1393ms (1805 modules)
- GET /juros-credito 200 in 1702ms
+ ✓ Compiled /juros-credito in 1295ms (1798 modules)
+ GET /juros-credito 200 in 1643ms
+ GET /juros-credito 200 in 84ms
  ○ Compiling /trabalho ...
- ✓ Compiled /trabalho in 1638ms (1813 modules)
- GET /trabalho 200 in 21884ms
- GET /trabalho 200 in 15499ms
- GET /trabalho 200 in 17884ms
- GET /atividade 200 in 419ms
+ ✓ Compiled /trabalho in 1529ms (1806 modules)
+ GET /trabalho 200 in 1956ms
+ ○ Compiling /projecoes ...
+ ✓ Compiled /projecoes in 883ms (1814 modules)
+ GET /projecoes 200 in 1103ms
+ ○ Compiling /atividade ...
+ ✓ Compiled /atividade in 1264ms (1843 modules)
+ GET /atividade 200 in 1508ms
+ GET /precos 200 in 175ms
+ GET /juros-credito 200 in 146ms
+ GET /precos 200 in 162ms
+ ✓ Compiled in 6.6s (1857 modules)
+ GET /precos 200 in 393ms
+ GET /precos 200 in 2843ms
+ GET /precos 200 in 536ms
+ ✓ Compiled in 2.3s (1857 modules)
+ GET /precos 200 in 390ms
+ GET /precos 200 in 690ms
+ GET /precos 200 in 898ms
+ GET /juros-credito 200 in 276ms
+ GET /trabalho 200 in 248ms
+ GET /projecoes 200 in 205ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1213ms (1023 modules)
+ GET / 200 in 1595ms
+ GET / 200 in 121ms
+ GET /atividade 200 in 148ms
+ GET / 200 in 199ms
+ GET /precos 200 in 575ms
+ GET /trabalho 200 in 173ms
+ GET /trabalho 200 in 1883ms
+ GET /projecoes 200 in 167ms
+ GET /atividade 200 in 1220ms

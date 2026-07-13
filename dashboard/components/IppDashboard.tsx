@@ -295,18 +295,18 @@ export function IppDashboard({ rows, cnaeRows = [] }: { rows: Row[]; cnaeRows?: 
           <div className="highlight-boxes">
             <div>
               <span>Maior IPP 12m</span>
-              <strong>{highest?.category ?? "n/d"}</strong>
-              <small>{formatPct(highest?.value ?? null)}</small>
+              <strong>{formatPct(highest?.value ?? null)}</strong>
+              <small title={highest?.category ?? "n/d"}>{highest?.category ?? "n/d"}</small>
             </div>
             <div>
               <span>Maior aceleração</span>
-              <strong>{fastest?.category ?? "n/d"}</strong>
-              <small>{formatPp(fastest?.deltaMonth ?? null)}</small>
+              <strong>{formatPp(fastest?.deltaMonth ?? null)}</strong>
+              <small title={fastest?.category ?? "n/d"}>{fastest?.category ?? "n/d"}</small>
             </div>
             <div>
               <span>Maior desaceleração</span>
-              <strong>{weakest?.category ?? "n/d"}</strong>
-              <small>{formatPp(weakest?.deltaMonth ?? null)}</small>
+              <strong>{formatPp(weakest?.deltaMonth ?? null)}</strong>
+              <small title={weakest?.category ?? "n/d"}>{weakest?.category ?? "n/d"}</small>
             </div>
           </div>
           <small className="source-label">Fonte: {source}</small>
