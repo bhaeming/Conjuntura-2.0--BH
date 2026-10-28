@@ -1,0 +1,589 @@
+{
+ "_coleta": "2026-10-27",
+ "paises": {
+  "_fonte": "OCDE, Education at a Glance (UOE, graduados por área, CINE 5-8, F05+F06+F07), 2024; Banco Mundial, WDI: SP.POP.TOTL e NY.GDP.PCAP.KD (US$ constantes de 2015), 2024.",
+  "ano": 2024,
+  "paises": [
+   {
+    "iso3": "IRL",
+    "pais": "Irlanda",
+    "graduados_stem": 25317,
+    "stem_100mil": 469.2,
+    "pib_pc_usd2015": 94475
+   },
+   {
+    "iso3": "AUS",
+    "pais": "Austrália",
+    "graduados_stem": 111206,
+    "stem_100mil": 408.9,
+    "pib_pc_usd2015": 61486
+   },
+   {
+    "iso3": "FIN",
+    "pais": "Finlândia",
+    "graduados_stem": 21395,
+    "stem_100mil": 380.7,
+    "pib_pc_usd2015": 45075
+   },
+   {
+    "iso3": "GBR",
+    "pais": "Reino Unido",
+    "graduados_stem": 261377,
+    "stem_100mil": 377.3,
+    "pib_pc_usd2015": 47901
+   },
+   {
+    "iso3": "CAN",
+    "pais": "Canadá",
+    "graduados_stem": 152079,
+    "stem_100mil": 368.6,
+    "pib_pc_usd2015": 45061
+   },
+   {
+    "iso3": "DNK",
+    "pais": "Dinamarca",
+    "graduados_stem": 20793,
+    "stem_100mil": 347.9,
+    "pib_pc_usd2015": 60773
+   },
+   {
+    "iso3": "KOR",
+    "pais": "Coreia do Sul",
+    "graduados_stem": 177687,
+    "stem_100mil": 343.3,
+    "pib_pc_usd2015": 37048
+   },
+   {
+    "iso3": "CHL",
+    "pais": "Chile",
+    "graduados_stem": 66179,
+    "stem_100mil": 334.8,
+    "pib_pc_usd2015": 14617
+   },
+   {
+    "iso3": "ISR",
+    "pais": "Israel",
+    "graduados_stem": 31959,
+    "stem_100mil": 319.5,
+    "pib_pc_usd2015": 41882
+   },
+   {
+    "iso3": "FRA",
+    "pais": "França",
+    "graduados_stem": 218475,
+    "stem_100mil": 318.7,
+    "pib_pc_usd2015": 39683
+   },
+   {
+    "iso3": "NZL",
+    "pais": "Nova Zelândia",
+    "graduados_stem": 16674,
+    "stem_100mil": 315.2,
+    "pib_pc_usd2015": 41415
+   },
+   {
+    "iso3": "AUT",
+    "pais": "Áustria",
+    "graduados_stem": 27734,
+    "stem_100mil": 302.2,
+    "pib_pc_usd2015": 45959
+   },
+   {
+    "iso3": "CHE",
+    "pais": "Suíça",
+    "graduados_stem": 26464,
+    "stem_100mil": 293.9,
+    "pib_pc_usd2015": 93018
+   },
+   {
+    "iso3": "DEU",
+    "pais": "Alemanha",
+    "graduados_stem": 227227,
+    "stem_100mil": 272.1,
+    "pib_pc_usd2015": 44028
+   },
+   {
+    "iso3": "USA",
+    "pais": "EUA",
+    "graduados_stem": 912785,
+    "stem_100mil": 268.5,
+    "pib_pc_usd2015": 66857
+   },
+   {
+    "iso3": "NOR",
+    "pais": "Noruega",
+    "graduados_stem": 14929,
+    "stem_100mil": 267.9,
+    "pib_pc_usd2015": 83487
+   },
+   {
+    "iso3": "SWE",
+    "pais": "Suécia",
+    "graduados_stem": 28102,
+    "stem_100mil": 265.9,
+    "pib_pc_usd2015": 54316
+   },
+   {
+    "iso3": "ESP",
+    "pais": "Espanha",
+    "graduados_stem": 129651,
+    "stem_100mil": 265.4,
+    "pib_pc_usd2015": 29245
+   },
+   {
+    "iso3": "PRT",
+    "pais": "Portugal",
+    "graduados_stem": 28298,
+    "stem_100mil": 264.6,
+    "pib_pc_usd2015": 22664
+   },
+   {
+    "iso3": "COL",
+    "pais": "Colômbia",
+    "graduados_stem": 126377,
+    "stem_100mil": 239.0,
+    "pib_pc_usd2015": 6865
+   },
+   {
+    "iso3": "ISL",
+    "pais": "Islândia",
+    "graduados_stem": 919,
+    "stem_100mil": 237.8,
+    "pib_pc_usd2015": 59054
+   },
+   {
+    "iso3": "HRV",
+    "pais": "Croácia",
+    "graduados_stem": 9120,
+    "stem_100mil": 235.9,
+    "pib_pc_usd2015": 17854
+   },
+   {
+    "iso3": "SVN",
+    "pais": "Eslovênia",
+    "graduados_stem": 5002,
+    "stem_100mil": 235.1,
+    "pib_pc_usd2015": 26135
+   },
+   {
+    "iso3": "GRC",
+    "pais": "Grécia",
+    "graduados_stem": 22928,
+    "stem_100mil": 220.4,
+    "pib_pc_usd2015": 21495
+   },
+   {
+    "iso3": "NLD",
+    "pais": "Países Baixos",
+    "graduados_stem": 38576,
+    "stem_100mil": 214.4,
+    "pib_pc_usd2015": 51175
+   },
+   {
+    "iso3": "ITA",
+    "pais": "Itália",
+    "graduados_stem": 126331,
+    "stem_100mil": 214.3,
+    "pib_pc_usd2015": 34508
+   },
+   {
+    "iso3": "BEL",
+    "pais": "Bélgica",
+    "graduados_stem": 25031,
+    "stem_100mil": 211.1,
+    "pib_pc_usd2015": 45020
+   },
+   {
+    "iso3": "POL",
+    "pais": "Polônia",
+    "graduados_stem": 76259,
+    "stem_100mil": 208.6,
+    "pib_pc_usd2015": 18001
+   },
+   {
+    "iso3": "TUR",
+    "pais": "Turquia",
+    "graduados_stem": 167982,
+    "stem_100mil": 196.4,
+    "pib_pc_usd2015": 15395
+   },
+   {
+    "iso3": "ROU",
+    "pais": "Romênia",
+    "graduados_stem": 37133,
+    "stem_100mil": 194.9,
+    "pib_pc_usd2015": 12460
+   },
+   {
+    "iso3": "MEX",
+    "pais": "México",
+    "graduados_stem": 245297,
+    "stem_100mil": 187.4,
+    "pib_pc_usd2015": 10284
+   },
+   {
+    "iso3": "EST",
+    "pais": "Estônia",
+    "graduados_stem": 2549,
+    "stem_100mil": 185.7,
+    "pib_pc_usd2015": 20078
+   },
+   {
+    "iso3": "CRI",
+    "pais": "Costa Rica",
+    "graduados_stem": 9149,
+    "stem_100mil": 178.3,
+    "pib_pc_usd2015": 15053
+   },
+   {
+    "iso3": "LTU",
+    "pais": "Lituânia",
+    "graduados_stem": 5114,
+    "stem_100mil": 177.1,
+    "pib_pc_usd2015": 19205
+   },
+   {
+    "iso3": "CZE",
+    "pais": "Tchéquia",
+    "graduados_stem": 18148,
+    "stem_100mil": 166.4,
+    "pib_pc_usd2015": 20449
+   },
+   {
+    "iso3": "PER",
+    "pais": "Peru",
+    "graduados_stem": 55960,
+    "stem_100mil": 163.5,
+    "pib_pc_usd2015": 6732
+   },
+   {
+    "iso3": "HUN",
+    "pais": "Hungria",
+    "graduados_stem": 15447,
+    "stem_100mil": 161.5,
+    "pib_pc_usd2015": 16543
+   },
+   {
+    "iso3": "BGR",
+    "pais": "Bulgária",
+    "graduados_stem": 9372,
+    "stem_100mil": 145.5,
+    "pib_pc_usd2015": 10127
+   },
+   {
+    "iso3": "SVK",
+    "pais": "Eslováquia",
+    "graduados_stem": 7794,
+    "stem_100mil": 143.7,
+    "pib_pc_usd2015": 19776
+   },
+   {
+    "iso3": "LVA",
+    "pais": "Letônia",
+    "graduados_stem": 2675,
+    "stem_100mil": 143.3,
+    "pib_pc_usd2015": 16376
+   },
+   {
+    "iso3": "BRA",
+    "pais": "Brasil",
+    "graduados_stem": 249109,
+    "stem_100mil": 117.5,
+    "pib_pc_usd2015": 9567
+   },
+   {
+    "iso3": "LUX",
+    "pais": "Luxemburgo",
+    "graduados_stem": 507,
+    "stem_100mil": 74.9,
+    "pib_pc_usd2015": 104147
+   }
+  ]
+ },
+ "ufs": {
+  "_fonte": "INEP, Censo da Educação Superior 2024 (microdados de cursos: concluintes de graduação com rótulo CINE 'Engenharia...', por UF do curso); IBGE, Contas Regionais 2023 (SIDRA 5938) e Projeções da População, revisão 2024 (denominadores de 2024 e 2023).",
+  "ano_inep": 2024,
+  "ano_pib": 2023,
+  "ufs": [
+   {
+    "cod": 11,
+    "sigla": "RO",
+    "uf": "Rondônia",
+    "concluintes": 460,
+    "concluintes_presencial": 332,
+    "eng_100mil": 26.34,
+    "eng_presencial_100mil": 19.01,
+    "pib_pc": 43934
+   },
+   {
+    "cod": 12,
+    "sigla": "AC",
+    "uf": "Acre",
+    "concluintes": 171,
+    "concluintes_presencial": 135,
+    "eng_100mil": 19.42,
+    "eng_presencial_100mil": 15.33,
+    "pib_pc": 29993
+   },
+   {
+    "cod": 13,
+    "sigla": "AM",
+    "uf": "Amazonas",
+    "concluintes": 1220,
+    "concluintes_presencial": 1048,
+    "eng_100mil": 28.5,
+    "eng_presencial_100mil": 24.48,
+    "pib_pc": 38154
+   },
+   {
+    "cod": 14,
+    "sigla": "RR",
+    "uf": "Roraima",
+    "concluintes": 90,
+    "concluintes_presencial": 66,
+    "eng_100mil": 12.56,
+    "eng_presencial_100mil": 9.21,
+    "pib_pc": 36137
+   },
+   {
+    "cod": 15,
+    "sigla": "PA",
+    "uf": "Pará",
+    "concluintes": 2656,
+    "concluintes_presencial": 1962,
+    "eng_100mil": 30.65,
+    "eng_presencial_100mil": 22.64,
+    "pib_pc": 29543
+   },
+   {
+    "cod": 16,
+    "sigla": "AP",
+    "uf": "Amapá",
+    "concluintes": 188,
+    "concluintes_presencial": 161,
+    "eng_100mil": 23.42,
+    "eng_presencial_100mil": 20.05,
+    "pib_pc": 35064
+   },
+   {
+    "cod": 17,
+    "sigla": "TO",
+    "uf": "Tocantins",
+    "concluintes": 540,
+    "concluintes_presencial": 412,
+    "eng_100mil": 34.23,
+    "eng_presencial_100mil": 26.12,
+    "pib_pc": 41040
+   },
+   {
+    "cod": 21,
+    "sigla": "MA",
+    "uf": "Maranhão",
+    "concluintes": 1072,
+    "concluintes_presencial": 908,
+    "eng_100mil": 15.29,
+    "eng_presencial_100mil": 12.95,
+    "pib_pc": 21308
+   },
+   {
+    "cod": 22,
+    "sigla": "PI",
+    "uf": "Piauí",
+    "concluintes": 653,
+    "concluintes_presencial": 564,
+    "eng_100mil": 19.34,
+    "eng_presencial_100mil": 16.71,
+    "pib_pc": 24040
+   },
+   {
+    "cod": 23,
+    "sigla": "CE",
+    "uf": "Ceará",
+    "concluintes": 2312,
+    "concluintes_presencial": 1898,
+    "eng_100mil": 25.04,
+    "eng_presencial_100mil": 20.56,
+    "pib_pc": 25253
+   },
+   {
+    "cod": 24,
+    "sigla": "RN",
+    "uf": "Rio Grande do Norte",
+    "concluintes": 945,
+    "concluintes_presencial": 717,
+    "eng_100mil": 27.42,
+    "eng_presencial_100mil": 20.81,
+    "pib_pc": 29608
+   },
+   {
+    "cod": 25,
+    "sigla": "PB",
+    "uf": "Paraíba",
+    "concluintes": 1238,
+    "concluintes_presencial": 1094,
+    "eng_100mil": 29.87,
+    "eng_presencial_100mil": 26.39,
+    "pib_pc": 23509
+   },
+   {
+    "cod": 26,
+    "sigla": "PE",
+    "uf": "Pernambuco",
+    "concluintes": 2243,
+    "concluintes_presencial": 1852,
+    "eng_100mil": 23.51,
+    "eng_presencial_100mil": 19.41,
+    "pib_pc": 28428
+   },
+   {
+    "cod": 27,
+    "sigla": "AL",
+    "uf": "Alagoas",
+    "concluintes": 546,
+    "concluintes_presencial": 474,
+    "eng_100mil": 16.96,
+    "eng_presencial_100mil": 14.72,
+    "pib_pc": 27866
+   },
+   {
+    "cod": 28,
+    "sigla": "SE",
+    "uf": "Sergipe",
+    "concluintes": 572,
+    "concluintes_presencial": 470,
+    "eng_100mil": 24.97,
+    "eng_presencial_100mil": 20.51,
+    "pib_pc": 26651
+   },
+   {
+    "cod": 29,
+    "sigla": "BA",
+    "uf": "Bahia",
+    "concluintes": 4749,
+    "concluintes_presencial": 3078,
+    "eng_100mil": 31.98,
+    "eng_presencial_100mil": 20.73,
+    "pib_pc": 29064
+   },
+   {
+    "cod": 31,
+    "sigla": "MG",
+    "uf": "Minas Gerais",
+    "concluintes": 11241,
+    "concluintes_presencial": 9004,
+    "eng_100mil": 52.72,
+    "eng_presencial_100mil": 42.23,
+    "pib_pc": 45746
+   },
+   {
+    "cod": 32,
+    "sigla": "ES",
+    "uf": "Espírito Santo",
+    "concluintes": 1761,
+    "concluintes_presencial": 1291,
+    "eng_100mil": 42.93,
+    "eng_presencial_100mil": 31.47,
+    "pib_pc": 51478
+   },
+   {
+    "cod": 33,
+    "sigla": "RJ",
+    "uf": "Rio de Janeiro",
+    "concluintes": 7962,
+    "concluintes_presencial": 5147,
+    "eng_100mil": 46.24,
+    "eng_presencial_100mil": 29.89,
+    "pib_pc": 68135
+   },
+   {
+    "cod": 35,
+    "sigla": "SP",
+    "uf": "São Paulo",
+    "concluintes": 25023,
+    "concluintes_presencial": 18331,
+    "eng_100mil": 54.43,
+    "eng_presencial_100mil": 39.87,
+    "pib_pc": 75131
+   },
+   {
+    "cod": 41,
+    "sigla": "PR",
+    "uf": "Paraná",
+    "concluintes": 7418,
+    "concluintes_presencial": 5517,
+    "eng_100mil": 62.73,
+    "eng_presencial_100mil": 46.66,
+    "pib_pc": 57081
+   },
+   {
+    "cod": 42,
+    "sigla": "SC",
+    "uf": "Santa Catarina",
+    "concluintes": 4027,
+    "concluintes_presencial": 3117,
+    "eng_100mil": 49.97,
+    "eng_presencial_100mil": 38.68,
+    "pib_pc": 64763
+   },
+   {
+    "cod": 43,
+    "sigla": "RS",
+    "uf": "Rio Grande do Sul",
+    "concluintes": 4834,
+    "concluintes_presencial": 3355,
+    "eng_100mil": 43.05,
+    "eng_presencial_100mil": 29.88,
+    "pib_pc": 57930
+   },
+   {
+    "cod": 50,
+    "sigla": "MS",
+    "uf": "Mato Grosso do Sul",
+    "concluintes": 1123,
+    "concluintes_presencial": 712,
+    "eng_100mil": 38.7,
+    "eng_presencial_100mil": 24.54,
+    "pib_pc": 64073
+   },
+   {
+    "cod": 51,
+    "sigla": "MT",
+    "uf": "Mato Grosso",
+    "concluintes": 1176,
+    "concluintes_presencial": 952,
+    "eng_100mil": 30.65,
+    "eng_presencial_100mil": 24.81,
+    "pib_pc": 72255
+   },
+   {
+    "cod": 52,
+    "sigla": "GO",
+    "uf": "Goiás",
+    "concluintes": 2059,
+    "concluintes_presencial": 1528,
+    "eng_100mil": 28.01,
+    "eng_presencial_100mil": 20.79,
+    "pib_pc": 46292
+   },
+   {
+    "cod": 53,
+    "sigla": "DF",
+    "uf": "Distrito Federal",
+    "concluintes": 1397,
+    "concluintes_presencial": 1064,
+    "eng_100mil": 46.83,
+    "eng_presencial_100mil": 35.67,
+    "pib_pc": 123223
+   }
+  ],
+  "brasil": {
+   "sigla": "BR",
+   "uf": "Brasil",
+   "concluintes": 87676,
+   "concluintes_presencial": 65189,
+   "eng_100mil": 41.24,
+   "eng_presencial_100mil": 30.67,
+   "pib_pc": 51694
+  }
+ }
+}
