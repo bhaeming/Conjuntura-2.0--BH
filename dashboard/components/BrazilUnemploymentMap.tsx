@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import type { EChartsOption } from "echarts";
 import * as echarts from "echarts";
 import type { Row } from "@/lib/data";
+import { sequentialGreenBlue } from "@/lib/palette";
 
 const ReactECharts = dynamic(() => import("echarts-for-react"), { ssr: false });
 
@@ -89,8 +90,8 @@ export function BrazilUnemploymentMap({ rows }: { rows: Row[] }) {
       bottom: 8,
       calculable: true,
       orient: "horizontal",
-      inRange: { color: ["#d8f3dc", "#74c69d", "#168aad", "#184e77"] },
-      textStyle: { color: "#52606d" },
+      inRange: { color: sequentialGreenBlue },
+      textStyle: { color: "#3e535d" },
     },
     series: [{
       name: variableConfig.label,
@@ -100,8 +101,8 @@ export function BrazilUnemploymentMap({ rows }: { rows: Row[] }) {
       roam: true,
       data: analysis.values,
       emphasis: {
-        label: { color: "#102a35", fontWeight: "bold" },
-        itemStyle: { areaColor: "#ffd166" },
+        label: { color: "#0f2530", fontWeight: "bold" },
+        itemStyle: { areaColor: "#f2c14e" },
       },
       itemStyle: { borderColor: "#ffffff", borderWidth: 1 },
     }],

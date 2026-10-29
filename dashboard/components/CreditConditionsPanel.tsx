@@ -4,8 +4,9 @@ import { useMemo, useState } from "react";
 import type { EChartsOption, SeriesOption } from "echarts";
 import type { Row } from "@/lib/data";
 import { ChartCard } from "./ChartCard";
+import { chartPalette } from "@/lib/palette";
 
-const palette = ["#087f5b", "#1677a8", "#2f9e44"];
+const palette = chartPalette;
 
 const configs = {
   juros: {
@@ -74,18 +75,18 @@ export function CreditConditionsPanel({ rows, source }: { rows: Row[]; source: s
       trigger: "axis",
       valueFormatter: (value) => `${Number(value).toLocaleString("pt-BR", { maximumFractionDigits: 2 })}%`,
     },
-    legend: { bottom: 0, icon: "roundRect", textStyle: { color: "#52606d" } },
+    legend: { bottom: 0, icon: "roundRect", textStyle: { color: "#3e535d" } },
     grid: { left: 20, right: 22, top: 24, bottom: 58, containLabel: true },
     xAxis: {
       type: "category",
       data: visible.map(rowDate),
-      axisLabel: { color: "#718096", hideOverlap: true, formatter: (value: string) => value.slice(0, 7) },
-      axisLine: { lineStyle: { color: "#dbe4ea" } },
+      axisLabel: { color: "#5b6f79", hideOverlap: true, formatter: (value: string) => value.slice(0, 7) },
+      axisLine: { lineStyle: { color: "#d3dde1" } },
     },
     yAxis: {
       type: "value",
-      axisLabel: { color: "#718096" },
-      splitLine: { lineStyle: { color: "#edf2f5" } },
+      axisLabel: { color: "#5b6f79" },
+      splitLine: { lineStyle: { color: "#e7eef0" } },
     },
     dataZoom: [{ type: "inside" }],
     series: entries.map(([key, label], index) => ({

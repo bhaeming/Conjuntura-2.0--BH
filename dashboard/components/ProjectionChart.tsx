@@ -63,7 +63,7 @@ export function ProjectionChart({ rows, source }: { rows: Row[]; source: string 
   };
 
   const option: EChartsOption = {
-    color: ["#087f5b", "#1677a8", "#83c5be", "#83c5be"],
+    color: ["#007a55", "#2563c9", "#5aa9e6", "#5aa9e6"],
     animationDuration: 700,
     tooltip: {
       trigger: "axis",
@@ -82,20 +82,20 @@ export function ProjectionChart({ rows, source }: { rows: Row[]; source: string 
       bottom: 0,
       icon: "roundRect",
       data: ["Observado", "Projeção central", "Cenário pessimista", "Cenário otimista"],
-      textStyle: { color: "#52606d" },
+      textStyle: { color: "#3e535d" },
     },
     grid: { left: 20, right: 22, top: 24, bottom: 58, containLabel: true },
     xAxis: {
       type: "category",
       boundaryGap: false,
       data: visible.map((row) => String(row.date ?? "")),
-      axisLabel: { color: "#718096", hideOverlap: true, formatter: (value: string) => value.slice(0, 7) },
-      axisLine: { lineStyle: { color: "#dbe4ea" } },
+      axisLabel: { color: "#5b6f79", hideOverlap: true, formatter: (value: string) => value.slice(0, 7) },
+      axisLine: { lineStyle: { color: "#d3dde1" } },
     },
     yAxis: {
       type: "value",
-      axisLabel: { color: "#718096", formatter: "{value}%" },
-      splitLine: { lineStyle: { color: "#edf2f5" } },
+      axisLabel: { color: "#5b6f79", formatter: "{value}%" },
+      splitLine: { lineStyle: { color: "#e7eef0" } },
     },
     dataZoom: [{ type: "inside" }],
     series: [

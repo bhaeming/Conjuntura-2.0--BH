@@ -102,7 +102,7 @@ export function UfRadarChart({ rows }: { rows: Row[] }) {
   );
 
   const option: EChartsOption = {
-    color: ["#087f5b"],
+    color: ["#007a55"],
     tooltip: {
       trigger: "item",
       valueFormatter: (value) => `${Number(value).toLocaleString("pt-BR", { maximumFractionDigits: 2 })}%`,
@@ -111,10 +111,10 @@ export function UfRadarChart({ rows }: { rows: Row[] }) {
       radius: "68%",
       indicator: radarData.map((item) => ({ name: item.label, min: -axisLimit, max: axisLimit })),
       splitNumber: 4,
-      axisName: { color: "#52606d", fontWeight: 700 },
-      splitLine: { lineStyle: { color: "#dfe8ec" } },
-      splitArea: { areaStyle: { color: ["#f8fbfa", "#eef7f4"] } },
-      axisLine: { lineStyle: { color: "#dfe8ec" } },
+      axisName: { color: "#3e535d", fontWeight: 700 },
+      splitLine: { lineStyle: { color: "#dde5e8" } },
+      splitArea: { areaStyle: { color: ["#f7faf9", "#eef5f3"] } },
+      axisLine: { lineStyle: { color: "#dde5e8" } },
     },
     series: [{
       name: "Crescimento em 12 meses",

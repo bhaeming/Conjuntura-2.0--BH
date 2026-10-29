@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { Download } from "lucide-react";
 import type { Row } from "@/lib/data";
 
 type Dataset = {
@@ -106,7 +107,7 @@ export function DataDownloadButton({ title, datasets }: { title: string; dataset
   return (
     <>
       <div className="page-data-actions">
-        <button onClick={openModal}>Acesse os dados da página</button>
+        <button onClick={openModal}><Download size={14} /> Dados da seção</button>
       </div>
       {open && (
         <div className="modal-backdrop" role="presentation" onClick={() => setOpen(false)}>

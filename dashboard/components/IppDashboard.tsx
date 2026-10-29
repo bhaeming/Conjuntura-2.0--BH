@@ -4,9 +4,10 @@ import { useMemo, useState } from "react";
 import type { EChartsOption, SeriesOption } from "echarts";
 import type { Row } from "@/lib/data";
 import { ChartCard } from "./ChartCard";
+import { chartPalette } from "@/lib/palette";
 
 const source = "IBGE (2026)";
-const palette = ["#1677a8", "#087f5b", "#2f9e44", "#339af0", "#0b7285", "#74b816", "#12b886", "#4dabf7"];
+const palette = chartPalette;
 
 type Perspective = "gce" | "cnae";
 type MetricRow = {
@@ -156,19 +157,19 @@ export function IppDashboard({ rows, cnaeRows = [] }: { rows: Row[]; cnaeRows?: 
       trigger: "axis",
       valueFormatter: (value) => `${Number(value).toLocaleString("pt-BR", { maximumFractionDigits: 2 })}%`,
     },
-    legend: { bottom: 0, type: "scroll", icon: "roundRect", textStyle: { color: "#52606d" } },
+    legend: { bottom: 0, type: "scroll", icon: "roundRect", textStyle: { color: "#3e535d" } },
     grid: { left: 20, right: 22, top: 24, bottom: 64, containLabel: true },
     xAxis: {
       type: "category",
       data: visibleDates,
-      axisLabel: { color: "#718096", hideOverlap: true, formatter: (value: string) => value.slice(0, 7) },
-      axisLine: { lineStyle: { color: "#dbe4ea" } },
+      axisLabel: { color: "#5b6f79", hideOverlap: true, formatter: (value: string) => value.slice(0, 7) },
+      axisLine: { lineStyle: { color: "#d3dde1" } },
     },
     yAxis: {
       type: "value",
       name: "% em 12 meses",
-      axisLabel: { color: "#718096" },
-      splitLine: { lineStyle: { color: "#edf2f5" } },
+      axisLabel: { color: "#5b6f79" },
+      splitLine: { lineStyle: { color: "#e7eef0" } },
     },
     dataZoom: [{ type: "inside" }],
     series: selectedCategories.map((category, index) => {

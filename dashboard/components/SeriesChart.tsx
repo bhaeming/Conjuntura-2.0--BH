@@ -4,8 +4,9 @@ import { useMemo, useState } from "react";
 import type { EChartsOption, SeriesOption } from "echarts";
 import type { Row } from "@/lib/data";
 import { ChartCard } from "./ChartCard";
+import { chartPalette } from "@/lib/palette";
 
-const palette = ["#087f5b", "#1677a8", "#2f9e44", "#339af0", "#0b7285", "#74b816", "#1864ab"];
+const palette = chartPalette;
 
 function numeric(value: Row[string] | undefined) {
   return typeof value === "number" && Number.isFinite(value) ? value : null;
@@ -69,19 +70,19 @@ export function SeriesChart({
       trigger: "axis",
       valueFormatter: (value) => `${Number(value).toLocaleString("pt-BR", { maximumFractionDigits: 2 })}${suffix}`,
     },
-    legend: { bottom: 0, icon: "roundRect", textStyle: { color: "#52606d" } },
+    legend: { bottom: 0, icon: "roundRect", textStyle: { color: "#3e535d" } },
     grid: { left: 20, right: 22, top: 24, bottom: 58, containLabel: true },
     xAxis: {
       type: "category",
       boundaryGap: type === "bar",
       data: visible.map((row) => String(row.date ?? row.Date ?? "")),
-      axisLabel: { color: "#718096", hideOverlap: true, formatter: (value: string) => value.slice(0, 7) },
-      axisLine: { lineStyle: { color: "#dbe4ea" } },
+      axisLabel: { color: "#5b6f79", hideOverlap: true, formatter: (value: string) => value.slice(0, 7) },
+      axisLine: { lineStyle: { color: "#d3dde1" } },
     },
     yAxis: {
       type: "value",
-      axisLabel: { color: "#718096" },
-      splitLine: { lineStyle: { color: "#edf2f5" } },
+      axisLabel: { color: "#5b6f79" },
+      splitLine: { lineStyle: { color: "#e7eef0" } },
     },
     dataZoom: [{ type: "inside" }],
     series: selected.map((key, index) => ({

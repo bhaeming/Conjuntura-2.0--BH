@@ -5,8 +5,9 @@ import type { EChartsOption, SeriesOption } from "echarts";
 import type { Row } from "@/lib/data";
 import { ChartCard } from "./ChartCard";
 import { KpiCard } from "./KpiCard";
+import { chartPalette } from "@/lib/palette";
 
-const palette = ["#087f5b", "#1677a8"];
+const palette = chartPalette;
 
 const regions = [
   { key: "ibc_se", label: "Sudeste" },
@@ -116,19 +117,19 @@ export function IbcActivityPanel({ nationalRows, regionalRows }: { nationalRows:
       trigger: "axis",
       valueFormatter: (item) => formatPercent(Number(item)),
     },
-    legend: { bottom: 0, icon: "roundRect", textStyle: { color: "#52606d" } },
+    legend: { bottom: 0, icon: "roundRect", textStyle: { color: "#3e535d" } },
     grid: { left: 20, right: 22, top: 24, bottom: 58, containLabel: true },
     xAxis: {
       type: "category",
       boundaryGap: false,
       data: visible.map((row) => row.date),
-      axisLabel: { color: "#718096", hideOverlap: true, formatter: (item: string) => item.slice(0, 7) },
-      axisLine: { lineStyle: { color: "#dbe4ea" } },
+      axisLabel: { color: "#5b6f79", hideOverlap: true, formatter: (item: string) => item.slice(0, 7) },
+      axisLine: { lineStyle: { color: "#d3dde1" } },
     },
     yAxis: {
       type: "value",
-      axisLabel: { color: "#718096", formatter: (item: number) => `${item.toLocaleString("pt-BR", { maximumFractionDigits: 1 })}%` },
-      splitLine: { lineStyle: { color: "#edf2f5" } },
+      axisLabel: { color: "#5b6f79", formatter: (item: number) => `${item.toLocaleString("pt-BR", { maximumFractionDigits: 1 })}%` },
+      splitLine: { lineStyle: { color: "#e7eef0" } },
     },
     dataZoom: [{ type: "inside" }],
     series: [

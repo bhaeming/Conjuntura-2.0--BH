@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import type { EChartsOption, SeriesOption } from "echarts";
 import type { Row } from "@/lib/data";
 import { ChartCard } from "./ChartCard";
+import { chartPalette } from "@/lib/palette";
 
 type GroupRow = {
   grupo: string;
@@ -12,7 +13,7 @@ type GroupRow = {
   dozeMeses: number | null;
 };
 
-const palette = ["#087f5b", "#1677a8", "#2f9e44", "#339af0", "#0b7285", "#74b816"];
+const palette = chartPalette;
 const groupPalette = ["#74c0fc", "#1971c2", "#ffa8a8", "#ff3b3f", "#69db7c", "#38b2ac", "#ffd166", "#ff8a00", "#7048e8", "#344054"];
 const inflationSource = "IBGE/BCB (2026)";
 const groupSource = "IBGE (2026)";
@@ -72,19 +73,19 @@ export function InflationDashboard({ ipcaRows, groupRows }: { ipcaRows: Row[]; g
       trigger: "axis",
       valueFormatter: (value) => `${Number(value).toLocaleString("pt-BR", { maximumFractionDigits: 2 })}%`,
     },
-    legend: { bottom: 0, icon: "roundRect", textStyle: { color: "#52606d" } },
+    legend: { bottom: 0, icon: "roundRect", textStyle: { color: "#3e535d" } },
     grid: { left: 20, right: 22, top: 24, bottom: 58, containLabel: true },
     xAxis: {
       type: "category",
       boundaryGap: chartConfig.type === "bar",
       data: visibleIpca.map(rowDate),
-      axisLabel: { color: "#718096", hideOverlap: true, formatter: (value: string) => value.slice(0, 7) },
-      axisLine: { lineStyle: { color: "#dbe4ea" } },
+      axisLabel: { color: "#5b6f79", hideOverlap: true, formatter: (value: string) => value.slice(0, 7) },
+      axisLine: { lineStyle: { color: "#d3dde1" } },
     },
     yAxis: {
       type: "value",
-      axisLabel: { color: "#718096" },
-      splitLine: { lineStyle: { color: "#edf2f5" } },
+      axisLabel: { color: "#5b6f79" },
+      splitLine: { lineStyle: { color: "#e7eef0" } },
     },
     dataZoom: [{ type: "inside" }],
     series: Object.entries(chartConfig.series).map(([key, label], index) => ({
@@ -172,25 +173,25 @@ export function InflationDashboard({ ipcaRows, groupRows }: { ipcaRows: Row[]; g
       trigger: "axis",
       valueFormatter: (value) => `${Number(value).toLocaleString("pt-BR", { maximumFractionDigits: 2 })}`,
     },
-    legend: { bottom: 0, type: "scroll", icon: "roundRect", textStyle: { color: "#52606d", fontSize: 10 } },
+    legend: { bottom: 0, type: "scroll", icon: "roundRect", textStyle: { color: "#3e535d", fontSize: 10 } },
     grid: { left: 20, right: 48, top: 20, bottom: 78, containLabel: true },
     xAxis: {
       type: "category",
       data: contributionData.dates,
-      axisLabel: { color: "#718096", hideOverlap: true, formatter: (value: string) => value.slice(0, 7) },
-      axisLine: { lineStyle: { color: "#dbe4ea" } },
+      axisLabel: { color: "#5b6f79", hideOverlap: true, formatter: (value: string) => value.slice(0, 7) },
+      axisLine: { lineStyle: { color: "#d3dde1" } },
     },
     yAxis: [
       {
         type: "value",
         name: "Contribuição (p.p.)",
-        axisLabel: { color: "#718096" },
-        splitLine: { lineStyle: { color: "#edf2f5" } },
+        axisLabel: { color: "#5b6f79" },
+        splitLine: { lineStyle: { color: "#e7eef0" } },
       },
       {
         type: "value",
         name: "Índice geral (%)",
-        axisLabel: { color: "#718096" },
+        axisLabel: { color: "#5b6f79" },
         splitLine: { show: false },
       },
     ],
