@@ -1,0 +1,20 @@
+{
+  "_sobre": "Números transcritos dos relatórios em docs_provisorio e usados no deck 'Pós-eleição 2027 v4' (conferidos em 27/10/2026). 'pag' = página do PDF.",
+  "rpm_set26": {
+    "_fonte": "BCB, Relatório de Política Monetária, setembro de 2026",
+    "pib": {"2026": 1.8, "2027": 1.4, "pag": 55},
+    "hiato": {"2T26": 0.5, "3T26": 0.4, "1T28": -0.4, "pag": 84},
+    "nuci_ago26": 82.9, "nuci_media_historica": 80.0, "nuci_pag": 84,
+    "juro_neutro": 5.0, "selic_real_exante_pico": 9.6, "selic_real_exante_pico_quando": "3T25",
+    "selic_real_exante_fim_horizonte": 6.5, "juro_pag": 81,
+    "ipca_4t": {"2026": 5.2, "2027": 3.9, "2028": 3.1}, "ipca_1t28": 3.2,
+    "prob_acima_teto": {"2026": 90, "2027": 33, "2028": 16}, "projecoes_pag": 85,
+    "credito": {"2026": 9.1, "2027": 8.8, "pag": 64}
+  },
+  "ipea_cc72_3t26": {
+    "_fonte": "Ipea, Carta de Conjuntura nº 72, Nota 23 (Visão geral, 3º trimestre de 2026)",
+    "pib": {"2026": 2.0, "2027": 1.7, "pag": 6},
+    "incerteza_eleitoral_poupanca_precaucional_pag": 3,
+    "canal_fluxo_de_caixa_e_apostas_pag": 2
+  }
+}
