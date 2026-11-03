@@ -45,51 +45,46 @@ export default function Desafios() {
       eyebrow="Eixo 2 · Desafios estruturantes"
       title={<>O que limita o crescimento<br /><em>no longo prazo.</em></>}
       lead="Produtividade, investimento, educação e dívida pública formam a base do potencial de crescimento. Este eixo reúne diagnósticos de longo prazo que complementam a leitura de conjuntura."
-      meta={[
-        { label: "Temas", value: "4 desafios" },
-        { label: "Horizonte", value: "Décadas" },
-        { label: "Status", value: "Em construção" },
-      ]}
+      intro={
+        <>
+          <div className="hero-intro-heading">
+            <span className="eyebrow">01 · Ponto de partida</span>
+            <h2>Por que olhar para o longo prazo</h2>
+            <p>A conjuntura explica o ciclo; os desafios estruturantes explicam o teto. Sem ganhos de produtividade, investimento consistente, capital humano e contas públicas sustentáveis, cada retomada esbarra rapidamente nos mesmos limites.</p>
+          </div>
+          <div className="draft-notice">
+            <strong>Visualizações provisórias.</strong> Os gráficos deste eixo usam valores ilustrativos para testar formatos e narrativa. Eles serão substituídos por séries oficiais e materiais próprios.
+          </div>
+          <div className="status-legend" aria-label="Legenda do diagnóstico">
+            {statuses.map((status) => (
+              <div key={status.key}><i className={`status-icon ${status.key}`} /><span><strong>{status.label}</strong>{status.text}</span></div>
+            ))}
+          </div>
+          <div className="pillar-grid">
+            {pillars.map((pillar, index) => {
+              const status = statusOf(pillar);
+              const max = Math.max(pillar.brasil, pillar.referencia) * 1.15;
+              return (
+                <a key={pillar.id} href={`#${pillar.id}`} className="pillar-card">
+                  <div className="pillar-top">
+                    <span className="pillar-index">{String(index + 2).padStart(2, "0")}</span>
+                    <span className={`pillar-status ${status.key}`}><i className={`status-icon ${status.key}`} />{status.label}</span>
+                  </div>
+                  <h3>{pillar.title}</h3>
+                  <p>{pillar.text}</p>
+                  <div className="pillar-gap">
+                    <small>{pillar.metric}</small>
+                    <div className="gap-row"><span>Brasil</span><div className="gap-track"><b className="brasil" style={{ width: `${(pillar.brasil / max) * 100}%` }} /></div><strong>{br(pillar.brasil, pillar.unit)}</strong></div>
+                    <div className="gap-row"><span>{pillar.refLabel}</span><div className="gap-track"><b className="referencia" style={{ width: `${(pillar.referencia / max) * 100}%` }} /></div><strong>{br(pillar.referencia, pillar.unit)}</strong></div>
+                  </div>
+                  <span className="pillar-link">Ir para a seção <ArrowDown size={13} /></span>
+                </a>
+              );
+            })}
+          </div>
+        </>
+      }
     >
-      <StorySection
-        id="introducao"
-        index={1}
-        eyebrow="Ponto de partida"
-        title="Por que olhar para o longo prazo"
-        lead="A conjuntura explica o ciclo; os desafios estruturantes explicam o teto. Sem ganhos de produtividade, investimento consistente, capital humano e contas públicas sustentáveis, cada retomada esbarra rapidamente nos mesmos limites."
-      >
-        <div className="draft-notice">
-          <strong>Visualizações provisórias.</strong> Os gráficos deste eixo usam valores ilustrativos para testar formatos e narrativa. Eles serão substituídos por séries oficiais e materiais próprios.
-        </div>
-        <div className="status-legend" aria-label="Legenda do diagnóstico">
-          {statuses.map((status) => (
-            <div key={status.key}><i className={`status-icon ${status.key}`} /><span><strong>{status.label}</strong>{status.text}</span></div>
-          ))}
-        </div>
-        <div className="pillar-grid">
-          {pillars.map((pillar, index) => {
-            const status = statusOf(pillar);
-            const max = Math.max(pillar.brasil, pillar.referencia) * 1.15;
-            return (
-              <a key={pillar.id} href={`#${pillar.id}`} className="pillar-card">
-                <div className="pillar-top">
-                  <span className="pillar-index">{String(index + 2).padStart(2, "0")}</span>
-                  <span className={`pillar-status ${status.key}`}><i className={`status-icon ${status.key}`} />{status.label}</span>
-                </div>
-                <h3>{pillar.title}</h3>
-                <p>{pillar.text}</p>
-                <div className="pillar-gap">
-                  <small>{pillar.metric}</small>
-                  <div className="gap-row"><span>Brasil</span><div className="gap-track"><b className="brasil" style={{ width: `${(pillar.brasil / max) * 100}%` }} /></div><strong>{br(pillar.brasil, pillar.unit)}</strong></div>
-                  <div className="gap-row"><span>{pillar.refLabel}</span><div className="gap-track"><b className="referencia" style={{ width: `${(pillar.referencia / max) * 100}%` }} /></div><strong>{br(pillar.referencia, pillar.unit)}</strong></div>
-                </div>
-                <span className="pillar-link">Ir para a seção <ArrowDown size={13} /></span>
-              </a>
-            );
-          })}
-        </div>
-      </StorySection>
-
       <StorySection
         id="produtividade"
         index={2}

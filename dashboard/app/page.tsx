@@ -45,35 +45,30 @@ export default function Conjuntura() {
       eyebrow="Eixo 1 · Conjuntura"
       title={<>Economia brasileira,<br /><em>em perspectiva.</em></>}
       lead="Uma leitura contínua do ciclo econômico: atividade, preços, condições financeiras, mercado de trabalho e cenários, com indicadores oficiais e interpretação econômica em cada etapa."
-      meta={[
-        { label: "IPCA 12m", value: percent(ipca) },
-        { label: "Selic", value: percent(selic) },
-        { label: "Desemprego", value: percent(desemprego, 1) },
-        { label: "Referência", value: ref(ipca) },
-      ]}
-    >
-      <StorySection
-        id="visao-geral"
-        index={1}
-        eyebrow="Resumo executivo"
-        title="O Brasil em quatro sinais"
-        lead="Atividade, inflação, juros e emprego definem a fotografia do ciclo. Leia nível e direção em conjunto para distinguir melhora estrutural de oscilações pontuais."
-      >
-        <div className="overview-grid">
-          <div className="kpi-grid two">
-            <KpiCard label="IPCA 12 meses" value={percent(ipca)} reference={ref(ipca)} source="IBGE/BCB (2026)" />
-            <KpiCard label="Selic" value={percent(selic)} reference={ref(selic)} source="BCB (2026)" />
-            <KpiCard label="Desemprego" value={percent(desemprego, 1)} reference={ref(desemprego)} source="IBGE (2026)" />
-            <KpiCard label="IBC-Br dessaz." value={number(ibc?.value ?? 0, 2)} reference={ref(ibc)} source="BCB (2026)" />
+      intro={
+        <>
+          <div className="hero-intro-heading">
+            <span className="eyebrow">01 · Resumo executivo</span>
+            <h2>O Brasil em quatro sinais</h2>
+            <p>Atividade, inflação, juros e emprego definem a fotografia do ciclo. Leia nível e direção em conjunto para distinguir melhora estrutural de oscilações pontuais.</p>
           </div>
-          <article className="reading-card">
-            <span className="eyebrow">Leitura integrada</span>
-            <h3>Atividade em desaceleração gradual, com alívio monetário em curso</h3>
-            <p>A Selic recuou para {percent(selic)} e o IPCA em 12 meses está em {percent(ipca)}, mas crédito caro e inadimplência em {percent(inadimplencia)} ainda limitam a transmissão. O mercado de trabalho, com desemprego de {percent(desemprego, 1)}, segue sustentando a renda, enquanto o investimento perde fôlego. As seções a seguir detalham cada vetor.</p>
-            <a href="#atividade">Começar pela atividade <ArrowDown size={14} /></a>
-          </article>
-        </div>
-      </StorySection>
+          <div className="overview-grid">
+            <div className="kpi-grid two">
+              <KpiCard label="IPCA 12 meses" value={percent(ipca)} reference={ref(ipca)} source="IBGE/BCB (2026)" />
+              <KpiCard label="Selic" value={percent(selic)} reference={ref(selic)} source="BCB (2026)" />
+              <KpiCard label="Desemprego" value={percent(desemprego, 1)} reference={ref(desemprego)} source="IBGE (2026)" />
+              <KpiCard label="IBC-Br dessaz." value={number(ibc?.value ?? 0, 2)} reference={ref(ibc)} source="BCB (2026)" />
+            </div>
+            <article className="reading-card">
+              <span className="eyebrow">Leitura integrada</span>
+              <h3>Atividade em desaceleração gradual, com alívio monetário em curso</h3>
+              <p>A Selic recuou para {percent(selic)} e o IPCA em 12 meses está em {percent(ipca)}, mas crédito caro e inadimplência em {percent(inadimplencia)} ainda limitam a transmissão. O mercado de trabalho, com desemprego de {percent(desemprego, 1)}, segue sustentando a renda, enquanto o investimento perde fôlego. As seções a seguir detalham cada vetor.</p>
+              <a href="#atividade">Começar pela atividade <ArrowDown size={14} /></a>
+            </article>
+          </div>
+        </>
+      }
+    >
 
       <StorySection
         id="atividade"
@@ -154,6 +149,7 @@ export default function Conjuntura() {
           { name: "socioeconomico_quarterly", source: "IBGE (2026)" },
           { name: "desemp_uf", source: "IBGE (2026)" },
           { name: "socioeconomico_uf", source: "IBGE (2026)" },
+          { name: "perfil_uf", source: "IBGE (2026)" },
         ]}
       >
         <div className="kpi-grid">

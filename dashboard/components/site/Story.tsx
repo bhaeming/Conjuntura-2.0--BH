@@ -1,37 +1,34 @@
 import type { ReactNode } from "react";
-import type { AxisKey } from "@/lib/axes";
+import { axes, type AxisKey } from "@/lib/axes";
 import { DataDownloadButton } from "@/components/DataDownloadButton";
 import { SectionNav } from "./SectionNav";
 import { SiteHeader } from "./SiteHeader";
 
+// A primeira seção do índice vive dentro do cabeçalho: o hero leva o id dela.
 export function StoryPage({
   axis,
   eyebrow,
   title,
   lead,
-  meta,
+  intro,
   children,
 }: {
   axis: AxisKey;
   eyebrow: string;
   title: ReactNode;
   lead: string;
-  meta?: { label: string; value: string }[];
+  intro?: ReactNode;
   children: ReactNode;
 }) {
   return (
     <>
       <SiteHeader active={axis} />
-      <section className={`story-hero ${axis}`}>
+      <section id={axes[axis].sections[0].id} className={`story-hero ${axis}`}>
         <div className="story-hero-inner">
           <span className="eyebrow">{eyebrow}</span>
           <h1>{title}</h1>
           <p>{lead}</p>
-          {meta && (
-            <dl className="story-hero-meta">
-              {meta.map((item) => <div key={item.label}><dt>{item.label}</dt><dd>{item.value}</dd></div>)}
-            </dl>
-          )}
+          {intro && <div className="story-hero-intro">{intro}</div>}
         </div>
       </section>
       <div className="story-layout">

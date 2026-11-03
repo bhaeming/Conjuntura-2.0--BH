@@ -6,7 +6,7 @@ import type { Row } from "@/lib/data";
 import { InView } from "./InView";
 
 // Cada painel traz o próprio código só quando é montado.
-const BrazilUnemploymentMap = dynamic(() => import("@/components/BrazilUnemploymentMap").then((m) => m.BrazilUnemploymentMap));
+const BrazilUfMap = dynamic(() => import("@/components/BrazilUfMap").then((m) => m.BrazilUfMap));
 const CreditConditionsPanel = dynamic(() => import("@/components/CreditConditionsPanel").then((m) => m.CreditConditionsPanel));
 const IbcActivityPanel = dynamic(() => import("@/components/IbcActivityPanel").then((m) => m.IbcActivityPanel));
 const InflationDashboard = dynamic(() => import("@/components/InflationDashboard").then((m) => m.InflationDashboard));
@@ -89,9 +89,9 @@ const panels = {
     render: ([rows]) => <CreditConditionsPanel rows={rows} source="BCB (2026)" />,
   },
   "trabalho-mapa": {
-    datasets: ["socioeconomico_uf", "desemp_uf"],
-    height: 640,
-    render: ([socioUf, desempUf]) => <BrazilUnemploymentMap rows={socioUf.length ? socioUf : desempUf} />,
+    datasets: ["socioeconomico_uf", "desemp_uf", "perfil_uf", "ibc_uf"],
+    height: 900,
+    render: ([socioUf, desempUf, perfil, ibcUf]) => <BrazilUfMap rows={socioUf.length ? socioUf : desempUf} profiles={perfil} ibcRows={ibcUf} />,
   },
   "trabalho-indicadores": {
     datasets: ["socioeconomico_quarterly"],
